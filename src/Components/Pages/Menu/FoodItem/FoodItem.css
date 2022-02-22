@@ -1,0 +1,115 @@
+.foodItem_container{
+    border: 1px solid rgb(255, 255, 255);
+    /* height: 526px; */
+    /* width: 313px; */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px  20px 0px;
+    width: 295px;
+    /* margin: 0 20px; */
+    cursor: pointer;
+    position: relative;
+    transition: all 1s;
+    
+}
+
+.title_container{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+#title{
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    color: #282C3F;
+}
+
+.categories_container{
+    font-size: 13px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    color:#686B78;
+}
+
+.filterSection{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 11px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2d2cd;
+}
+
+
+.offerSection{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.offerSection p{
+    display: flex;
+    color: #8A584B;
+    font-size: 14px;
+    align-items: center;
+}
+
+
+.quickView{
+    color: #5d8ed5;
+    font-size: 13px;
+    font-weight: 500;
+    border-top: 1px solid #e2d2cd;
+    width: 80%;
+    margin: 0 auto;
+    /* display: none; */
+    /* position: absolute; */
+    visibility: hidden;
+}
+
+
+.food_description{
+    border: 1px solid rgb(0, 0, 0);
+    height: 436px;
+    width: 295px;
+    position: absolute;
+    background-color: #6c76a848;
+    z-index: -1;
+    /* display: none; */
+    left: 0px;
+    transition: all 1s ;
+    visibility: hidden;
+}
+
+
+.foodItem_container:hover .food_description{
+    display: block;
+    left: 300px;
+    width: 400px;
+    background-color: #8A584B;
+    z-index: 1;
+    visibility: visible;
+}
+
+.foodItem_container:hover{
+    border: 1px solid lightgray;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    /* width: 284px; */
+    /* padding: 14px  23px 7px; */
+    /* height: 296px; */
+    z-index: 2;
+    position: relative;
+}
+
+
+.foodItem_container:hover .quickView{
+    /* display: block; */
+    cursor: pointer;
+    visibility: visible;
+}
