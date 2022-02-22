@@ -92,6 +92,10 @@ export const LocationBased = () => {
             </a>
           </div>
         </div>
+
+        <div className="locationBasedMainLocation">
+          <div className="locationBasedMainLocationHeading">Where might we find you?</div>
+        </div>
       </div>
     </div>
   );
