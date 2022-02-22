@@ -1,0 +1,11 @@
+.svghov:hover {
+    transform: scale(1.1);
+  }
+.svghov {
+    transition: all 0.2s;
+    transform-origin: 50% 50%;
+    color:rgb(158, 19, 19);
+  }
+.hov:hover {
+    color:red;
+}
