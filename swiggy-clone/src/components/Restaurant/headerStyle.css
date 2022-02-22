@@ -1,0 +1,33 @@
+#restoHeader {
+  border: 1px solid rebeccapurple;
+  display: flex;
+  background-color: #171a29;
+  color: white;
+  padding: 0px 2vw;
+}
+#restobanner img {
+  width: 25vw;
+}
+#restomid {
+  width: 50vw;
+  padding-left: 5vw;
+}
+#restoMidRating {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+.restoMidRatingDivP {
+  font-size: 10px;
+}
+#reatoMidSearch {
+  display: flex;
+}
+
+#reatoMidSearch div {
+  margin-right: 2vw;
+  background-color: white;
+  color: gray;
+  padding: 0.5vw;
+}
