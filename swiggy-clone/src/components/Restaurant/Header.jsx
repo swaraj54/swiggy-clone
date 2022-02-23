@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
+
 const Header = () => {
   return (
     <div>
@@ -63,7 +64,7 @@ const Header = () => {
                         <div>50% off up to ₹100 | Use code TRYNEW</div>
                     </div>
                     <div>
-                    <span>p</span>
+                    <span><SearchIcon/></span>
                         <div>15% off upto ₹100 | Use SBIC100 Above ₹400</div>
                     </div>
                 </div>
