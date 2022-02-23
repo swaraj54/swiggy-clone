@@ -1,0 +1,63 @@
+.faq-top{
+    width:100%;
+     background-color: #357188;
+     height: 100vh;
+     position:fixed;
+}
+.faq-top-first {
+    margin-left: 4%;
+    color:white;
+    text-align: left;
+    margin-top:8vh;
+}
+.faq-top-first h3 {
+    margin-top: -3vh;
+}
+.faq-top-second {
+    margin-top: 5vh;
+    width:98%;
+    margin-left:2%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+}
+.faq-top-second-first {
+    flex:1;
+    width:20%;
+    margin-left:4%;
+    margin-top:8vh;
+    background: #edf1f7;
+    height: 100%;
+    position:fixed;
+}
+.faq-top-second-second {
+    margin-left:29%;
+    margin-top:8vh;
+    width: 70%;
+    text-align:left;
+}
+.faq-top-second-first-div h4 {
+    color:#282c3f;
+    text-align: left;
+    margin-left:25%;
+}
+.faq-top-second-first-div2 h4 {
+    color:#6a6c75;
+    text-align: left;
+    margin-left:25%;
+}
+.faq-top-second-second h2 {
+    color:#282c3f;
+    margin-left:2% ;
+}
+.faq-top-second-first-div {
+    width:90%;
+    margin-left:10%;
+    background-color:white;
+    height: 10vh;
+}
+.faq-top-second-first-div2{
+    width:90%;
+    margin-left:10%;
+    height: 10vh;
+}
