@@ -1,5 +1,9 @@
 import React from "react";
 import "./headerStyle.css"
+import StarIcon from '@mui/icons-material/Star';
+import SearchIcon from '@mui/icons-material/Search';
+import Checkbox from '@mui/material/Checkbox';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const Header = () => {
   return (
@@ -21,7 +25,7 @@ const Header = () => {
             </div>
             <div id="restoMidRating">
               <div className="restoMidRatingDiv">
-                <p>p</p>
+                <StarIcon/>--
                 <p className="restoMidRatingDivP">Too Few Ratings</p>
               </div>
               <div className="restoMidRatingDiv">
@@ -37,16 +41,16 @@ const Header = () => {
           {/* header mid search div */}
           <div id="reatoMidSearch" >
               <div>
-                  <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                  <span><input type="text" placeholder="Search for dishes..." /></span>
+                  <p><SearchIcon/></p>
+                  <p><input type="text" placeholder="Search for dishes..." /></p>
               </div>
               <div>
-                  <span>p</span>
-                  <span>Veg Only</span>
+                  <Checkbox color="success" className="reatoMidCheck"  />
+                  <p>Veg Only</p>
               </div>
               <div>
-                  <span>p</span>
-                  <span>Favourite</span>
+                  <FavoriteBorderIcon/>
+                  <p>Favourite</p>
               </div>
           </div>
         </div>

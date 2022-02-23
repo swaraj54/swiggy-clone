@@ -9,7 +9,7 @@
   width: 25vw;
 }
 #restomid {
-  width: 50vw;
+  width: 40vw;
   padding-left: 5vw;
 }
 #restoMidRating {
@@ -23,11 +23,33 @@
 }
 #reatoMidSearch {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #reatoMidSearch div {
   margin-right: 2vw;
   background-color: white;
   color: gray;
-  padding: 0.5vw;
+  /* padding: 0.5vw; */
+  display: flex;
+  justify-items: center;
+  text-align: center;
+}
+
+#reatoMidSearch div input {
+  /* vertical-align: top; */
+  /* text-align: center; */
+  border: none;
+  /* height: 20px; */
+}
+#reatoMidSearch div p {
+  margin: 2px 0px;
+  padding: 0;
+  text-align: center;
+}
+
+.reatoMidCheck {
+  width: 30px;
+  height: 30px;
 }
