@@ -1,32 +1,75 @@
 #restoHeader {
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
   display: flex;
   background-color: #171a29;
   color: white;
   padding: 0px 2vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  /* height: 20vh; */
 }
-#restobanner img {
-  width: 25vw;
+#restobannerimg {
+  width: 20vw;
+}
+#restobannerimgSmall {
+  width: 20vw;
+  height: 15vh;
+}
+#restobanner {
+  margin-top: 2vw;
 }
 #restomid {
-  width: 40vw;
+  min-width: 45vw;
   padding-left: 5vw;
 }
 #restoMidRating {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   text-align: center;
+  margin-bottom: 1vw;
+
+  /* height: 10vh; */
 }
 .restoMidRatingDivP {
   font-size: 10px;
 }
+.restoMidRatingDiv1 {
+  text-align: left;
+}
+.restoMidRatingDiv1,
+.restoMidRatingDiv2 {
+  border-right: 1px solid white;
+  width: 15vw;
+  /* height: 5vw; */
+}
+
+.restoMidRatingDiv3 {
+  width: 15vw;
+}
+.restoMidRatingDiv1 p,
+.restoMidRatingDiv3 p,
+.restoMidRatingDiv2 p {
+  margin: 0;
+}
+
 #reatoMidSearch {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: -28px;
+}
+#reatoMidSearchAfter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  /* bottom: -28px; */
 }
 
+#reatoMidSearchAfter div,
 #reatoMidSearch div {
   margin-right: 2vw;
   background-color: white;
@@ -37,13 +80,15 @@
   text-align: center;
 }
 
-#reatoMidSearch div input {
+#reatoMidSearch div input,
+#reatoMidSearchAfter div input {
   /* vertical-align: top; */
   /* text-align: center; */
   border: none;
   /* height: 20px; */
 }
-#reatoMidSearch div p {
+#reatoMidSearch div p,
+#reatoMidSearchAfter div p {
   margin: 2px 0px;
   padding: 0;
   text-align: center;
@@ -52,4 +97,123 @@
 .reatoMidCheck {
   width: 30px;
   height: 30px;
+}
+
+.restoOfferFlex {
+  display: flex;
+  margin: 0.7vw;
+}
+
+#restoOfferDiv {
+  border: 1px solid white;
+  padding: 1vw;
+  margin-top: 3vw;
+  position: relative;
+}
+.restoOfferTag {
+  background-color: #171a29;
+  font-size: 1.3vw;
+  position: absolute;
+  top: -26px;
+  left: -19px;
+  padding: 1vw;
+}
+#restoVegIcon {
+  color: green;
+  border: 2px solid green;
+  font-size: 1em;
+}
+
+#restoItemBody {
+  display: flex;
+  /* position: absolute; */
+  margin-top: 20vw;
+}
+#restoSingleItmeDiv {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  line-height: 1.2em;
+  padding: 3vw 0;
+}
+#restoCat {
+  width: 21vw;
+  text-align: right;
+  padding: 1vw 3vw 3vw 3vw;
+  position: fixed;
+}
+#restoCatBodyItem2 img {
+  width: 11vw;
+  border-radius: 10px;
+}
+#restoCatBodyItem2 {
+  position: relative;
+  /* border: 1px solid red; */
+}
+#restoCatBody {
+  width: 40vw;
+  /* position: fixed; */
+  margin-left: 26vw;
+}
+
+#restoCatBodyItem2 .restoImageBtn {
+  position: absolute;
+  background-color: white;
+  color: green;
+  /* top: 0; */
+  bottom: -3px;
+  left: 19%;
+  border-radius: 0px;
+  width: 7vw;
+}
+
+.restoOffOrange {
+  color: orange;
+  font-size: 0.9vw;
+  margin-left: 0.6vw;
+}
+#restoCart {
+  width: 25vw;
+  margin-left: 3vw;
+  position: fixed;
+  right: 0px;
+}
+#restoCart img {
+  width: 100%;
+}
+
+#dispayNone {
+  display: none;
+}
+#restoMidRatingMainDiv {
+  display: block;
+  /* background-color: rebeccapurple; */
+}
+
+#sortAddress span {
+  margin-right: 1vw;
+  color: gray;
+  font-size: 0.9em;
+}
+#sortAddress {
+  margin-bottom: 10px;
+}
+
+#reatoMidSearchDiv1 {
+  height: 2vw;
+  padding: 0.5vw;
+  border: 1px solid red;
+  width: 17vw;
+}
+#reatoMidSearchDiv2 {
+  height: 2vw;
+  padding: 0.5vw;
+  border: 1px solid red;
+  width: 9vw;
+}
+#reatoMidSearchDiv3 {
+  height: 2vw;
+  padding: 0.5vw;
+  border: 1px solid red;
+  width: 9vw;
 }
