@@ -1,0 +1,46 @@
+.filter_container{
+    /* border: 1px solid black; */
+}
+
+.filter_main_container{
+    border-bottom: 1px solid lightgray;
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalResturant{
+    flex:0.2
+}
+
+.filterOptions{
+    flex:0.8;
+    /* border: 1px solid red; */
+}
+
+.filterOptions .options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filterOptions .options li{
+    list-style: none;
+    cursor: pointer;
+    color: #3d4152;
+    font-weight: 500;
+    font-size: 0.8vw;
+}
+
+.filterOptions .options li:hover{
+    color:black;
+}
+
+.filterLogo{
+    display: flex;
+    align-items: center;
+    color:black;
+    font-weight: 600;
+}

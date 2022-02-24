@@ -9,10 +9,18 @@
     padding: 20px  20px 0px;
     width: 295px;
     /* margin: 0 20px; */
-    cursor: pointer;
+    cursor: pointer;  
+}
+
+
+.foodItem_container:hover{
+    border: 1px solid lightgray;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    /* width: 284px; */
+    /* padding: 14px  23px 7px; */
+    /* height: 296px; */
+    z-index: 2;
     position: relative;
-    transition: all 1s;
-    
 }
 
 .title_container{
@@ -74,42 +82,53 @@
 }
 
 
+.foodItem_container:hover .quickView{
+    /* display: block; */
+    cursor: pointer;
+    visibility: visible;
+    /* color:#8A584B; */
+}
+
+.quickView p:hover{
+    color:#8A584B;
+    position: relative;
+}
+
 .food_description{
+    background-color: #192fa148;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    display: none;
+}
+
+.quickView p:hover .food_description{
+    display: block;
+}
+
+/* .food_description{
     border: 1px solid rgb(0, 0, 0);
     height: 436px;
     width: 295px;
     position: absolute;
     background-color: #6c76a848;
-    z-index: -1;
-    /* display: none; */
+    z-index: 3;
+    display: block;
     left: 0px;
     transition: all 1s ;
-    visibility: hidden;
-}
+    /* visibility: hidden; */
+/* } */ 
 
 
-.foodItem_container:hover .food_description{
+/* .quickView:hover .food_description{
     display: block;
     left: 300px;
     width: 400px;
     background-color: #8A584B;
-    z-index: 1;
-    visibility: visible;
-}
-
-.foodItem_container:hover{
-    border: 1px solid lightgray;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-    /* width: 284px; */
-    /* padding: 14px  23px 7px; */
-    /* height: 296px; */
-    z-index: 2;
-    position: relative;
-}
+    /* z-index: 1; */
+    /* visibility: visible; } */
 
 
-.foodItem_container:hover .quickView{
-    /* display: block; */
-    cursor: pointer;
-    visibility: visible;
-}
+
+
+

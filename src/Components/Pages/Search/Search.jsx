@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../Navbar/Navbar'
 import './Search.css'
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
@@ -47,39 +46,27 @@ function Search() {
    console.log("foodItems",foodItems);
   return (
     <div className='search_container'>
-      <Navbar/>
 
       {/* Search Section */}
       <div className="search_main_container">
-        <div className="inputField">
-           <SearchIcon sx={
-             {
-               fontSize:"1.6vw"
-             }
-           }/>
-           <input type="text" value={query} onChange={(event) => setQuery(event.target.value)} placeholder='Search For Restaurants or Dishes'/>
-           <strong style={{
-             fontSize:"0.7vw",
-             color:"#fc8019",
-             visibility:"hidden"
-           }} className="clearText">CLEAR</strong>
-        </div>
 
-        <div className="cancelSearch">
-          <button className='closeBtn'>
-            <CloseIcon sx={
+        {/* Merge Input Field and Show Result Section */}
+        <div className="mergeContainer">
+          <div className="inputField">
+            <SearchIcon sx={
               {
-                fontSize:"2.8vw",
-                fontWeight:"100",
-                border:"none"
+                fontSize:"1.6vw"
               }
             }/>
-            <span>ESC</span>
-          </button>
-        </div>
-      </div>
+            <input type="text" value={query} onChange={(event) => setQuery(event.target.value)} placeholder='Search For Restaurants or Dishes'/>
+            <strong style={{
+              fontSize:"0.7vw",
+              color:"#fc8019",
+              display:"none"
+            }} className="clearText">CLEAR</strong>
+          </div>
 
-      {/* Disability Section */}
+          {/* Disability Section */}
        <div className="show_result">
          {
            query.length > 0 ? searchData.map((item,id)=>{
@@ -99,6 +86,24 @@ function Search() {
            <div className="nothing"></div>
          }
        </div>
+        </div>
+        
+
+        <div className="cancelSearch">
+          <button className='closeBtn'>
+            <CloseIcon sx={
+              {
+                fontSize:"2.8vw",
+                fontWeight:"100",
+                border:"none"
+              }
+            }/>
+            <span>ESC</span>
+          </button>
+        </div>
+      </div>
+
+      
     </div>
   )
 }

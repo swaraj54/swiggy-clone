@@ -70,7 +70,7 @@ function FoodItems() {
     return (
         <>
             <div className='food_items__container'>
-              <h1>Hello I am food item container</h1>
+              {/* <h1>Hello I am food item container</h1> */}
               <div className="foot_items_main_container">
               {/* <FoodItem/> */}
                   {

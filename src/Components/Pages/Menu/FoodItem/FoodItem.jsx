@@ -13,10 +13,7 @@ function FoodItem() {
   return (
     <div className='foodItem_container'>
 
-      {/* Food Menu description */}
-      <div className="food_description">
-        
-      </div>
+      
 
       {/* Image Container */}
       <div className="img_container">
@@ -74,7 +71,11 @@ function FoodItem() {
          
        </div>
 
-
+      
+      {/* Food Menu description */}
+      <div className="food_description">
+        
+      </div>
 
 
     </div>

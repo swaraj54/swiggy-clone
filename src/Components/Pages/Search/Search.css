@@ -1,16 +1,26 @@
 .search_container{
     text-align: center;
     /* border: 1px solid black; */
-    
+    margin-top: 8vw;
 }
 
-.inputField{
+.search_container .mergeContainer{
+    /* border: 1px solid black; */
+    width: 55.5vw;
+    /* height: fit-content; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.mergeContainer .inputField{
     border:1px solid lightgray ;
-    border-radius: 4px;
-    padding: 0px 1.5vw;
+    border-radius: 1px;
+    padding: 1vw 1.5vw;
+    border-bottom: none;
 }
 
-.search_main_container{
+ .search_main_container{
     display: flex;
     justify-content: space-around;
     width: 65vw;
@@ -21,27 +31,34 @@
 }
 
 
-.inputField{
+.search_main_container .inputField{
     flex: 0.9;
     display: flex;
     align-items: center;
 }
 
-.inputField input{
+.search_main_container .inputField input{
     font-size: 1vw;
     /* border: 1px solid red; */
     flex: 1;
     font-size: 1.3vw;
     /* color: black; */
     caret-color: #fc8019;
+    border: none;
+    outline: none;
 }
 
-.inputField input:active .clearText{
-    visibility:visible
+.search_main_container .inputField .clearText{
+
+}
+
+.search_main_container .inputField input:focus .clearText{
+    /* visibility:visible */
+    display: block;
 }
 
 
-.closeBtn{
+.search_main_container .closeBtn{
    display: flex;
    flex-direction: column;
    border: none;
@@ -49,59 +66,60 @@
    align-items: center;
 }
 
-.closeBtn span{
+.search_main_container .closeBtn span{
     font-size: 0.8vw;
     color:#7e808c;
 }
 
-.show_result{
+.mergeContainer .show_result{
     border: 1px solid lightgray;
-    width: 55.64vw;
+    width: 55.51vw;
     margin: 0px auto;
     position:absolute;
-    left: 18.95%;
+    left: 18.99%;
     box-sizing: border-box;
-    border-top: none;
+    /* border-top: none; */
     max-height: 25vw;
     overflow-y: scroll;
+    /* margin-top: 2vw; */
 }
 
 
 
 
-.search_item{
+.search_container .search_item{
     display: flex;
     align-items: center;
     padding: 0 1vw;
 }
 
-.search_item:hover{
+.search_container .search_item:hover{
     background-color: rgba(217, 237, 243, 0.671);
     cursor: pointer;
 }
 
-.img_container{
+.search_container .img_container{
    padding: 1vw;
 }
 
 
-.img_container img{
+.search_container .img_container img{
     width: 3vw;
 }
 
 
 
-.item_desc{
+.search_container .item_desc{
     text-align: left;
 }
 
 
-.item_desc h5{
+.search_container .item_desc h5{
    /* border: 1px solid red; */
    margin-bottom: 0;
 }
 
-.item_desc p{
+.search_container .item_desc p{
     /* border: 1px solid red; */
     margin-top: 0;
 }

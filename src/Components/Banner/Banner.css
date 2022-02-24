@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     min-width: 1200px;
+    margin-top: 5vw;
 }
 
 .banner_main_container{
@@ -17,25 +18,25 @@
 }
 
 
-.inputField{
+.banner_main_container .inputField{
    display: flex;
    /* align-items: center; FC8019*/
 }
 
 
-.inputField input{
+.banner_main_container .inputField input{
     padding: 8px 20px;
     width: 240px;
     border: 1px solid white;
 }
 
 
-.inputField input:focus{
+.banner_main_container .inputField input:focus{
     border: none;
     outline: none;
 }
 
-.inputField button{
+.banner_main_container .inputField button{
     background-color: #FC8019;
     border: #FC8019;
     padding: 0 8px;

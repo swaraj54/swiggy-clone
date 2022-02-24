@@ -3,20 +3,23 @@ import './Banner.css'
 
 
 
-function Banner() {
+function Banner({heading,desc,color,flag}) {
   return (
-    <div className='banner__container'>
+    <div className='banner__container' style={{backgroundColor:`${color}`}}>
       {/* <h1>hELLO I am Banner</h1> */}
       <div className="banner_main_container">
         <div className="location_heading">
-          <h1>Best North Indian restaurants in Delhi</h1>
+          <h1>{heading}</h1>
         </div>
         <div className="select_location">
-          <p>Set exact location to find the right restaurants near you.</p>
-          <div className="inputField">
+          <p>{desc}</p>
+          {
+            flag ? <div></div> : <div className="inputField">
             <input type="text"  placeholder='Enter street name, area etc...'/>
             <button>FIND FOOD</button>
           </div>
+          }
+          
         </div>
       </div>
     </div>
