@@ -6,13 +6,16 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+
+
 function Help() {
- 
+  
+
   return (
     <>
-      <div className="faq-top" >
+      <div sx={{'&:hover': {color: "#f77103"}}} className="faq-top" >
         <div className="faq-top-first">
-          <h1>Help & Support</h1>
+          <h1   >Help & Support</h1>
           <h3>Let's take a step ahead and help you better.</h3>
         </div>
         <div className="faq-top-second">
@@ -33,14 +36,16 @@ function Help() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              sx={{'&:hover': {color: "#f77103"}}}
               
             >
-              <Typography>I want to partner my restaurant with Swiggy</Typography>
+              <Typography >I want to partner my restaurant with Swiggy</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography sx={{color:"#f77103", fontSize: "2vh",}}>
               Partner with us
               </Typography>
+              <button className="butcol" >SEND AN EMAIL</button>
             </AccordionDetails>
           </Accordion>
           <Accordion sx={{color:"#6a6c75"}}>
@@ -48,6 +53,7 @@ function Help() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              sx={{'&:hover': {color: "#f77103"}}}
             >
               <Typography>What are the mandatory documents needed to list my restaurant on Swiggy?</Typography>
             </AccordionSummary>
@@ -67,6 +73,7 @@ function Help() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              sx={{'&:hover': {color: "#f77103"}}}
             >
               <Typography>After I submit all documents, how long will it take for my restaurant to go live on Swiggy?</Typography>
             </AccordionSummary>
@@ -81,6 +88,7 @@ function Help() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              sx={{'&:hover': {color: "#f77103"}}}
             >
               <Typography>What is this one time Onboarding fees? Do I have to pay for it while registering?</Typography>
             </AccordionSummary>
@@ -95,6 +103,7 @@ function Help() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              sx={{'&:hover': {color: "#f77103"}}}
             >
               <Typography>Who should I contact if I need help & support in getting onboarded?</Typography>
             </AccordionSummary>
@@ -109,6 +118,7 @@ function Help() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              sx={{'&:hover': {color: "#f77103"}}}
             >
               <Typography>How much commission will I be charged by Swiggy?</Typography>
             </AccordionSummary>
@@ -123,6 +133,7 @@ function Help() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              sx={{'&:hover': {color: "#f77103"}}}
             >
               <Typography>I don’t have an FSSAI licence for my restaurant. Can it still be onboarded?</Typography>
             </AccordionSummary>
