@@ -3,10 +3,11 @@ var rastaurant = [
     name: "The Ora Cafe",
     cat: "North Indian, Beverages",
     rating: "4.0",
-    time: "",
-    avgPrice: "",
-    image: "",
-    address: "",
+    time: "25 mins",
+    avgPrice: "₹ 200 Cost for two",
+    image:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sdvbpv9nvx4xzoujrwql",
+    address: "Bhilwara, Sanjay Colony",
   },
   {
     name: "Mirchi Restaurant",
@@ -14,8 +15,9 @@ var rastaurant = [
     rating: "3.9",
     time: "20 MINS",
     avgPrice: "₹300 FOR TWO",
-    image: "",
-    address: "",
+    image:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/povypukzcottzmhmy4fy",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Hot Pizza",
@@ -23,8 +25,9 @@ var rastaurant = [
     rating: "3.9",
     time: "23 MINS",
     avgPrice: "₹200 FOR TWO",
-    image: "",
-    address: "",
+    image:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/onrussybboydf7hpidkr",
+    address: "Old Bhilwara, Old Bhilwara",
   },
   {
     name: "Bholenath Pizza Centre",
@@ -33,7 +36,7 @@ var rastaurant = [
     time: "",
     avgPrice: "",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Kanha ji daal bati",
@@ -50,8 +53,9 @@ var rastaurant = [
     rating: "--",
     time: "22 MINS",
     avgPrice: "₹200 FOR TWO",
-    image: "",
-    address: "",
+    image:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vczeztxo1wpk9pqxiucq",
+    address: "Old Bhilwara, Shastri Nagar",
   },
   {
     name: "Eating Seating",
@@ -69,7 +73,7 @@ var rastaurant = [
     time: "17 MINS",
     avgPrice: "₹200 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Sonu Patties",
@@ -87,7 +91,7 @@ var rastaurant = [
     time: "20 MINS",
     avgPrice: "₹300 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Angeethi Restaurant (Hotel Ashoka Residency)",
@@ -95,8 +99,9 @@ var rastaurant = [
     rating: "3.1",
     time: "24 MINS",
     avgPrice: "₹200 FOR TWO",
-    image: "",
-    address: "",
+    image:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vejmtuy9txuwelm0xeba",
+    address: "Bhilwara, Shastri Nagar",
   },
   {
     name: "Mateshwari Falhari Center",
@@ -132,7 +137,7 @@ var rastaurant = [
     time: "29 MINS",
     avgPrice: "₹200 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "INOX",
@@ -159,7 +164,7 @@ var rastaurant = [
     time: "16 MINS",
     avgPrice: "₹300 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Chalta Firta Restaurant",
@@ -167,8 +172,9 @@ var rastaurant = [
     rating: "--",
     time: "31 MINS",
     avgPrice: "₹200 FOR TWO",
-    image: "",
-    address: "",
+    image:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/xg0vcdztyvdxjbxkswsf",
+    address: "Old Bhilwara, Shastri Nagar",
   },
   {
     name: "SS Chowmein & Manchurian",
@@ -177,7 +183,7 @@ var rastaurant = [
     time: "22 MINS",
     avgPrice: "₹100 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Chawla Chicken",
@@ -195,7 +201,7 @@ var rastaurant = [
     time: "20 MINS",
     avgPrice: "₹250 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Saffron The Family Restaurant",
@@ -231,7 +237,7 @@ var rastaurant = [
     time: "25 MINS",
     avgPrice: "₹100 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Suruchi Restaurant",
@@ -258,7 +264,7 @@ var rastaurant = [
     time: "27 MINS",
     avgPrice: "₹500 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "The Roll Junction",
@@ -302,8 +308,9 @@ var rastaurant = [
     rating: "4.2",
     time: "27 MINS",
     avgPrice: "₹200 FOR TWO",
-    image: "",
-    address: "",
+    image:
+      "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/akbnfuabaonpdvrmagcb",
+    address: "Old Bhilwara, Azad Nagar",
   },
   {
     name: "Score board sports cafe",
@@ -311,7 +318,7 @@ var rastaurant = [
     rating: "3.1",
     time: "25 MINS",
     avgPrice: "₹250 FOR TWO",
-    image: "",
+    image: "Bhilwara, Bhopal Ganj",
     address: "",
   },
   {
@@ -339,7 +346,7 @@ var rastaurant = [
     time: "27 MINS",
     avgPrice: "₹200 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Roll express",
@@ -375,7 +382,7 @@ var rastaurant = [
     time: "25 MINS",
     avgPrice: "₹200 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "SN Pizza",
@@ -411,7 +418,7 @@ var rastaurant = [
     time: "34 MINS",
     avgPrice: "₹200 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Sip & Gossip Cafe",
@@ -456,7 +463,7 @@ var rastaurant = [
     time: "27 MINS",
     avgPrice: "₹350 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Blue Umbrella Bakers",
@@ -492,7 +499,7 @@ var rastaurant = [
     time: "24 MINS",
     avgPrice: "₹100 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Balaji Fast Food",
@@ -528,7 +535,7 @@ var rastaurant = [
     time: "34 MINS",
     avgPrice: "₹300 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Dev Restaurant",
@@ -555,7 +562,7 @@ var rastaurant = [
     time: "25 MINS",
     avgPrice: "₹200 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Shree Ram Pizza Corner",
@@ -609,7 +616,7 @@ var rastaurant = [
     time: "28 MINS",
     avgPrice: "₹300 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Pink plate",
@@ -636,7 +643,7 @@ var rastaurant = [
     time: "25 MINS",
     avgPrice: "₹300 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Hotel Radiance",
@@ -681,7 +688,7 @@ var rastaurant = [
     time: "35 MINS",
     avgPrice: "₹250 FOR TWO",
     image: "",
-    address: "",
+    address: "Old Bhilwara, Old Bhilwara",
   },
   {
     name: "Fumes & Flames",
@@ -708,7 +715,7 @@ var rastaurant = [
     time: "32 MINS",
     avgPrice: "₹350 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
   {
     name: "Masala nonveg restaurant",
@@ -717,7 +724,7 @@ var rastaurant = [
     time: "30 MINS",
     avgPrice: "₹350 FOR TWO",
     image: "",
-    address: "",
+    address: "Old Bhilwara, Old Bhilwara",
   },
   {
     name: "B12 Garden Restaurant",
@@ -762,7 +769,7 @@ var rastaurant = [
     time: "32 MINS",
     avgPrice: "₹200 FOR TWO",
     image: "",
-    address: "",
+    address: "Old Bhilwara, Old Bhilwara",
   },
   {
     name: "Tikka N Talk",
@@ -771,6 +778,6 @@ var rastaurant = [
     time: "39 MINS",
     avgPrice: "₹250 FOR TWO",
     image: "",
-    address: "",
+    address: "Bhilwara, Bhopal Ganj",
   },
 ];

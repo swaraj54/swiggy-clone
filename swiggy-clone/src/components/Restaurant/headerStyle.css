@@ -144,6 +144,7 @@
 }
 #restoCatBodyItem2 img {
   width: 11vw;
+  height: 8vw;
   border-radius: 10px;
 }
 #restoCatBodyItem2 {
@@ -216,4 +217,12 @@
   padding: 0.5vw;
   border: 1px solid red;
   width: 9vw;
+}
+
+.mapSmallItem {
+  color: gray;
+  font-size: 0.89em;
+}
+.mapSmallItemH1 {
+  margin-bottom: 2px;
 }

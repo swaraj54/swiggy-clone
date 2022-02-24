@@ -10,25 +10,33 @@ import CircleIcon from '@mui/icons-material/Circle';
 import RestoAddress from "./RestoAddress";
 import {RestoShotAddress} from "./RestoShotAddress";
 import { RestaurantFooter } from "./RestaurantFooter";
+import { item } from "./data";
 
 
-var arr=[1,2,3,4,5]
+var arr=[
+  "Burger",
+  "French fries",
+  "Garlic bread",
+  "Patties",
+  "Pizza",
+  "Sandwich",
+  "Shake",
+]
 
-
-const singleItem=()=>{
+const singleItem=(name,price,image)=>{
   return(
     <div id="restoSingleItmeDiv">
                 <div className="restoVegIconDiv">
                   <div id="restocircleDiv"><CircleIcon id="restoVegIcon"/></div>
-                  <h3>Salted</h3>
+                  <h4>{name}</h4>
                   <div id="restoCatBodyItem1">
-                    <span>₹200</span>
+                    <span>₹{price}</span>
                     <span className="restoOffOrange">| 50% |</span>
                     <span className="restoOffOrange">USE TRYNEW</span>
                   </div>
                 </div>
                 <div id="restoCatBodyItem2">
-                  <img  src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ydxbhua4siqyh3jtxudd"  />
+                  <img  src={image}  />
                   
                   <Button variant="contained"  className="restoImageBtn">ADD</Button>
 
@@ -116,18 +124,46 @@ const Header = () => {
 
       <div id="restoItemBody">
         <div id="restoCat" >
-          <p>Recommended</p>
-          <p>Popcorn</p>
-          <p>Beverages</p>
-        </div>
-        <div id="restoCatBody">
-          <h1>Recommended</h1>
-          <div>5 ITEMS</div>
-          <div>
           {
             arr.map((e)=>{
-              return singleItem()
+              return <p>{e}</p>
             })
+          }
+        </div>
+        <div id="restoCatBody">
+         
+          <div>
+          {
+            
+            arr.map((e)=>{
+              console.log(e)
+              console.log(item[e])
+              return(
+                <>
+                 <h1 className="mapSmallItemH1" >{e}</h1>
+                 <div className="mapSmallItem" >{item[e].length} Items</div>
+                {
+                item[e].map((x)=>{
+                  return singleItem(x.name,x.price,x.image)
+                })
+              }
+                </>
+               
+                
+              )
+            })
+
+          
+            
+            // Object.keys(item).map(function(keyName, keyIndex) {
+            //   // use keyName to get current key's name
+            //   // and a[keyName] to get its value
+            //   console.log(keyName)
+            //   item[keyName].map((e)=>{
+            //      singleItem()
+            //   })
+            // })
+            
           }
           </div>
         </div>
