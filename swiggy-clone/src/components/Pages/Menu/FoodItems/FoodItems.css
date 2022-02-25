@@ -1,0 +1,30 @@
+.food_items__container{
+    /* border: 1px solid rgb(160, 39, 39); */
+    /* height: 1800px; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* width: 100%; */
+    box-sizing: border-box;
+}
+
+.foot_items_main_container{
+    /* border: 1px solid rgb(28, 124, 28); */
+    /* min-width: 75rem; */
+    /* max-width: 75rem; */
+    width: 80vw;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    padding-right: 50px;
+}
+
+.stat{
+    font-size: 8px;
+}
+
+.foot_items_main_container:nth-child(4){
+    left: -300px;
+}

@@ -1,0 +1,9 @@
+.menu__container{
+    /* border: 1px solid rgb(155, 153, 153); */
+    text-align: center;
+    /* height: 1800px; */
+    min-width: 100%;
+    max-width: 75rem;
+    overflow-x:hidden;
+
+}
