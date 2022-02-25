@@ -1,0 +1,52 @@
+.findOnDiv{
+    height:33vw;
+}
+#findOnContainer{
+    width:80vw;
+    margin-left:10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.findOnDivItems{
+    width:25vw;
+    height:31vw;
+}
+.findOnDivItems img{
+    width:25vw;
+    height:31vw;
+}
+.findOnDivItems3{
+  align-self: flex-end;
+  margin-top:2vw;
+}
+#findOnContainer .findOnTitle{
+    font-size: 2.60vw;
+    font-weight: bold;
+    letter-spacing: -0.45px;
+    line-height: 1;
+    width:19vw;
+}
+#findOnContainer .findOnDivItems1{
+width:26vw;
+height:20vw;
+margin-top:6vw;
+text-align: left;
+}
+#findOnContainer .findOnContent{
+    font-size: 1.35vw;
+    width: 26vw;
+    font-weight: 600;
+    padding-top: 1.3vw;
+    padding-bottom: 3.5vw;
+    color: #6c6d77;
+    line-height: 1.2;
+}
+
+#findOnContainer #downloadButtons{
+    display: flex;
+    justify-content: space-between;
+}
+#findOnContainer #downloadButtons img{
+    height:3.5vw;
+    width:11.5vw;
+}

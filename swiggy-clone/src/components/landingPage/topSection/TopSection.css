@@ -1,0 +1,187 @@
+/* top section */
+
+#landingTopSection {
+    height: 33.15vw;
+    width: 100%;
+    display: flex;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  }
+  .landingTopSectionPart1 {
+    width: 56.73vw;
+    height: 100%;
+  }
+  .landingTopSectionPart2 {
+    width: 44.27vw;
+    height: 100%;
+  }
+  #landingTopSection img {
+    width: 50vw;
+  }
+  #landingTopLeftContent {
+    width: 40.36vw;
+    margin-left: 9vw;
+    height: 100%;
+  }
+  
+  #logoDiv #landingPageLogoImg {
+    height: 3.5vw;
+    width: 12.58vw;
+  }
+  #landingPageTopButtons {
+    display: flex;
+    margin-top: 0.5vw;
+  }
+  #landingTopLeftContent #logoDiv {
+      width: 40.36vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vw;
+  }
+  
+  #landingPageTopButtons .logInButton {
+    background-color: transparent;
+    /* margin-right:1vw; */
+    border: none;
+    font-weight: 500;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    height: 2.5vw;
+    font-size: 1vw;
+  }
+  #landingPageTopButtons .logInButton:hover {
+    color: orange;
+  }
+  #landingPageTopButtons .signUpButton {
+    background-color: black;
+    margin-right: 1vw;
+    color: white;
+    font-weight: 500;
+    border: none;
+    height: 2.5vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    font-size: 1vw;
+    line-height: 1vw;
+  }
+  
+  /* choose why div  */
+  #landingTopSection #chooseWhyDiv {
+    margin-top: 3vw;
+    text-align: left;
+  }
+  
+  /* moving name section  */
+  #landingTopSection .movingNameDiv {
+    height: 3.45vw;
+    overflow-y: hidden;
+    transition: all 1s;
+  }
+  #landingTopSection .movingName {
+    margin-bottom: 0;
+    font-size: 2.60vw;
+    font-weight: 600;
+    letter-spacing: -0.45px; 
+    animation: mymove 3s ease-out infinite;
+  }
+  
+  @keyframes mymove {
+    0% {
+      margin-top: 1.4vw;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  
+  #landingTopSection .orderFoodFrom {
+    font-size: 1.56vw;
+    color: #686b78;
+    margin-top: 1vw;
+   
+  }
+  #landingTopSection #inputBoxDiv {
+      height: 3.7vw;
+      width: 39.32vw;
+      margin-top: 3vw;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  #landingTopSection #inputBox{
+      margin-left:1vw;
+      border:none;
+      width: 20vw;
+      
+  }
+  #landingTopSection #inputBox::placeholder{
+    font-size: 1vw;
+  }
+  
+  #landingTopSection #locationButtonDiv{
+  width:30.5vw;
+  display: flex;
+  justify-content: space-between;
+  border:1px solid rgb(255, 126, 20);
+  border-right: none;
+  }
+  
+  #landingTopSection .locationButton{
+     width:10vw;
+     font-size:0.8vw;
+     text-transform: capitalize;
+     border: none;
+  }
+
+  #landingTopSection .locationButton .locationLogo{
+    height:1.4vw;
+    width:1.4vw;
+  }
+   
+  #landingTopSection .foodButton{
+      background-color: rgb(255, 126, 20);
+      width:10vw;
+      border: none;
+      height: auto;
+      color:white;
+      font-size: 1vw;
+      font-weight: bolder;
+      right:0;
+      margin-left: -0.2vw;
+  }
+  #landingTopSection #inputBox:focus{
+      outline: none;
+  }
+  #landingTopSection .locationButton:focus{
+      outline: none;
+  }
+  #landingTopSection .foodButton:focus{
+      outline: none;
+  }
+  #landingTopSection .logInButton{
+    outline: none;
+  }
+  
+  #landingTopSection #popularCitiesDiv{
+  text-align: left;
+  }
+  #landingTopSection #popularCityText{
+      font-weight: 400;
+      font-size: 1vw;
+      color: #a9abb2;
+      margin: 2.55vw 0 0.8vw;
+      letter-spacing: -.2px;
+      text-transform: uppercase;
+  }
+  #popularCityNames{
+      font-size: 1vw;
+      font-weight: 600;
+      margin-right: 0.8;
+      color: #686b78;
+      line-height: 1.5;
+      letter-spacing: -.3px;
+  }
+  #popularCityNames span{
+      color: #93959f;
+      padding:0.5vw;
+  }
+  

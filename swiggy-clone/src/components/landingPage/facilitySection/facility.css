@@ -1,0 +1,33 @@
+.landingPageFacilityDiv{
+    height:24.23vw;
+    width:100%;
+    background: #2b1e16;
+}
+.landingPageFacilityDiv #flexContentDiv{
+    display: flex;
+    justify-content: space-between;
+    width:80vw;
+    margin-left:10vw;
+}
+.landingPageFacilityDiv .facilityDivItems{
+    height:17.5vw;
+    width:16.9vw;
+}
+.landingPageFacilityDiv .facilityDivItems img{
+    width: 7vw;
+    height:13vw;
+}
+.landingPageFacilityDiv .facilityDivItems .facilityTitle{
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-top: 0;
+    color:white;
+    margin-top:2vw;
+}
+
+.landingPageFacilityDiv .facilityDivItems .facilityContent{
+    font-size: 1vw;
+    margin-top: 0.7vw;
+    color: #e0cbc1;
+    line-height: 1.3;
+}
