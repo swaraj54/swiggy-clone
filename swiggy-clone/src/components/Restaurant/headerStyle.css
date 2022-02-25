@@ -180,11 +180,13 @@
 }
 #restoCatBody {
   width: 40vw;
-
+  top: 30vw;
+  position: sticky;
   margin-left: 2vw;
   margin-right: 2vw;
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  height: 50vw;
 }
 
 #restoCatBodyItem2 .restoImageBtn {

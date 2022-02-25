@@ -128,6 +128,7 @@ const Header = () => {
           })}
         </div>
         <div id="restoCatBody">
+          <div>
           {
             arr.map((e) => {
               console.log(e);
@@ -145,6 +146,8 @@ const Header = () => {
 
             
           }
+          </div>
+          
         </div>
         <div id="restoCart">
           <h1>Cart Empty</h1>
