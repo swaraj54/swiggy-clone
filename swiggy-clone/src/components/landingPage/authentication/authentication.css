@@ -1,0 +1,133 @@
+.authenticationDiv{
+    width: 37vw;
+    height:100vh;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 2;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    position: fixed;
+    transition: all 1s;
+}
+.authenticationContentDiv{
+    width: 22vw;
+    margin-left: 4vw;
+    margin-top: 3vw;
+    text-align: left;
+}
+.authenticationDiv #signUpButtonDiv{
+    width: 22vw;
+    height: 6vw;
+    justify-content: space-between;
+    margin-top: 1.6vw;
+}
+.authenticationDiv .signUpRightImage{
+    height: 6.5vw;
+}
+
+.authenticationDiv .authenticationTitle{
+    font-size: 1.9vw;
+    font-weight: 500;
+}
+.authenticationDiv .otherAuthicationOption{
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+.authenticationDiv .otherAuthicationOption span{
+    cursor: pointer;
+    color: #fc8019;
+}
+.authenticationDiv .emptyButton{
+    border:0.3px solid black;
+    height:0.1vw;
+    width:2vw;
+    line-height: 0vw;
+}
+
+.authenticationDiv #signupInputDiv{
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    margin-top:3vw;
+    margin-bottom: 1.5vw;
+}
+
+.authenticationDiv #signupInputDiv .inputItem{
+height: 4.5;
+width: 22vw;
+border: 1px solid #d4d5d9;
+}
+.authenticationDiv #signupInputDiv .inputItem input{
+    background-color: transparent;
+    line-height: normal;
+    border: none;
+    outline: none;
+    height: 4vw;
+    width: 100%;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0 1.3vw;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+.authenticationDiv #signupInputDiv .inputItem input:focus{
+    padding-top:1vw;
+}
+.authenticationDiv #signupInputDiv .inputItem input:focus::placeholder{
+position:absolute;
+font-size:0.8vw;
+font-weight: 600;
+transition:all 0.3s;
+}
+
+.authenticationDiv #signupInputDiv .referralInputBox{
+display: none;
+}
+.authenticationDiv .continueButton{
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 2rem;
+    color: #fc8019;
+    letter-spacing: 0;
+    color: #fff;
+    background-color: #fc8019;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+    text-transform: uppercase;
+    margin-top:1vw;
+}
+.authenticationDiv .continueButton:focus{
+    outline: none;
+}
+
+.authenticationDiv #referralButtonDiv .referralButton{
+    font-size: 1vw;
+    font-weight: 500;
+    color: #5d8ed5;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+.authenticationDiv .referralButton:focus{
+    outline: none;
+}
+.authenticationDiv .termCondition{
+    font-size: 12px;
+    color: #686b78;
+    margin-top: 6px;
+    font-weight: 540;
+}
+.authenticationDiv .termCondition span{
+    color:#2d2e36;
+}
