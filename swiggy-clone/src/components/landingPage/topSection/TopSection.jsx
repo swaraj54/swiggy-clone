@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import "./TopSection.css";
 import Button from "@material-ui/core/Button";
-import MyLocationIcon from '@mui/icons-material/MyLocation';
+// import MyLocationIcon from '@mui/icons-material/MyLocation';
 import Authentication from "../authentication/Authentication";
 import { AuthContext } from '../AuthContext';
 
@@ -66,7 +66,7 @@ const TopSection = () => {
             <div id="inputBoxDiv">
             <div id="locationButtonDiv">
                 <input id="inputBox" type="text" placeholder='Enter your dellivery location' style={{ backgroundColor: auth ? "rgb(190, 190, 190)" : "transparent"}} />
-                <Button endIcon={<MyLocationIcon className="locationLogo" />} className="locationButton">Locate me</Button>
+                {/* <Button endIcon={<MyLocationIcon className="locationLogo" />} className="locationButton">Locate me</Button> */}
                 </div> 
 
                    <Button className="foodButton">Find food</Button>

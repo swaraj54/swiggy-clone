@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import "./authentication.css";
-import CloseIcon from '@mui/icons-material/Close';
+// import CloseIcon from '@mui/icons-material/Close';
 import { AuthContext } from '../AuthContext';
 
 
@@ -17,9 +17,9 @@ const Authentication = ({ whichDiv}) => {
     return (
         <div className='authenticationDiv'   style={{right : auth ? "0" : "-37vw"}}>
            <div className="authenticationContentDiv">
-           <CloseIcon className="closeIcon" onClick={()=>{
+           {/* <CloseIcon className="closeIcon" onClick={()=>{
                toggleAuthDiv()
-           }} />
+           }} /> */}
 
            <div id="signUpButtonDiv" style={{display:signUp ? "flex" : "none"}}>
                <div id="signupLeftContent">

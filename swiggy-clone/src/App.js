@@ -1,11 +1,12 @@
-import './App.css';
+
 import {Routes,Route} from 'react-router-dom';
-// import Menu from './Components/Pages/Menu/Menu';
+import Menu from './components/Pages/Menu/Menu';
 // import Navbar from './components/Navbar/Navbar';
-// import Search from './Components/Pages/Search/Search'
-// import PaymentOffers from './Components/Pages/Offers/PaymentOffers';
-// import RestaurantOffers from './Components/Pages/Offers/RestaurantOffers';
+// import Search from './components/Pages/Search/Search'
+// import PaymentOffers from './components/Pages/Offers/PaymentOffers';
+// import RestaurantOffers from './components/Pages/Offers/RestaurantOffers';
 import LandingPage from './components/landingPage/LandingPage';
+import Cart from "./components/cart/Cart";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<LandingPage/>}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/Menu" element={<Menu />}></Route>
         {/* <Route path='/search' element={<Search/>}></Route>
         <Route path='/offers/restaurant' element={<RestaurantOffers/>}></Route>
         <Route path='/offers/payment' element={<PaymentOffers/>}></Route> */}
