@@ -1,6 +1,6 @@
 
 import {Routes,Route} from 'react-router-dom';
-import Menu from './components/Pages/Menu/Menu';
+// import Menu from './components/Pages/Menu/Menu';
 // import Navbar from './components/Navbar/Navbar';
 // import Search from './components/Pages/Search/Search'
 // import PaymentOffers from './components/Pages/Offers/PaymentOffers';
@@ -14,9 +14,9 @@ function App() {
       {/* <Navbar/> */}
 
       <Routes>
-        <Route path='/' element={<LandingPage/>}></Route>
-        <Route path="/cart" element={<Cart />}></Route>
-        <Route path="/Menu" element={<Menu />}></Route>
+        <Route path='/' element={<Cart/>}></Route>
+        {/* <Route path="/cart" element={<Cart />}></Route> */}
+        {/* <Route path="/Menu" element={<Menu />}></Route> */}
         {/* <Route path='/search' element={<Search/>}></Route>
         <Route path='/offers/restaurant' element={<RestaurantOffers/>}></Route>
         <Route path='/offers/payment' element={<PaymentOffers/>}></Route> */}
