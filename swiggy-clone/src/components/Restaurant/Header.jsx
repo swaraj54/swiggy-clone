@@ -5,15 +5,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import Checkbox from "@mui/material/Checkbox";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import Button from '@mui/material/Button';
-import CircleIcon from '@mui/icons-material/Circle';
+import Button from "@mui/material/Button";
+import CircleIcon from "@mui/icons-material/Circle";
 import RestoAddress from "./RestoAddress";
-import {RestoShotAddress} from "./RestoShotAddress";
+import { RestoShotAddress } from "./RestoShotAddress";
 import { RestaurantFooter } from "./RestaurantFooter";
 import { item } from "./data";
-
-
-var arr=[
+import StickyBox from "react-sticky-box";
+import{Test} from "../test/test.jsx"
+var arr = [
+  "Recommended",
   "Burger",
   "French fries",
   "Garlic bread",
@@ -21,70 +22,67 @@ var arr=[
   "Pizza",
   "Sandwich",
   "Shake",
-]
+];
 
-const singleItem=(name,price,image)=>{
-  return(
+const singleItem = (name, price, image) => {
+  return (
     <div id="restoSingleItmeDiv">
-                <div className="restoVegIconDiv">
-                  <div id="restocircleDiv"><CircleIcon id="restoVegIcon"/></div>
-                  <h4>{name}</h4>
-                  <div id="restoCatBodyItem1">
-                    <span>₹{price}</span>
-                    <span className="restoOffOrange">| 50% |</span>
-                    <span className="restoOffOrange">USE TRYNEW</span>
-                  </div>
-                </div>
-                <div id="restoCatBodyItem2">
-                  <img  src={image}  />
-                  
-                  <Button variant="contained"  className="restoImageBtn">ADD</Button>
+      <div className="restoVegIconDiv">
+        <div id="restocircleDiv">
+          <CircleIcon id="restoVegIcon" />
+        </div>
+        <h4>{name}</h4>
+        <div id="restoCatBodyItem1">
+          <span>₹{price}</span>
+          <span className="restoOffOrange">| 50% |</span>
+          <span className="restoOffOrange">USE TRYNEW</span>
+        </div>
+      </div>
+      <div id="restoCatBodyItem2">
+        <img src={image} />
 
-                </div>
-              </div>
-  )
-    
-  
-}
-
-
-
+        <Button variant="contained" className="restoImageBtn">
+          ADD
+        </Button>
+      </div>
+    </div>
+  );
+};
 
 const Header = () => {
+  const [navSize, setNavSize] = useState(false);
 
-
-  const [navSize,setNavSize]=useState(false)
-
-  const navChange=()=>{
-    if(window.scrollY>=20)
-    {
-      setNavSize(true)
+  const navChange = () => {
+    if (window.scrollY >= 20) {
+      setNavSize(true);
+    } else {
+      setNavSize(false);
     }
-    else{
-      setNavSize(false)
-    }
-    console.log(navSize)
-  }
-  
-  window.addEventListener('scroll',navChange)
+    console.log(navSize);
+  };
 
- 
+  window.addEventListener("scroll", navChange);
+
   return (
+    <>
     <div>
       <div id="restoHeader">
         <div id="restobanner">
-          <img id={navSize?"restobannerimgSmall":"restobannerimg"} src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/fgh8slhx9pbiuctxkysf" />
+          <img
+            id={navSize ? "restobannerimgSmall" : "restobannerimg"}
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/fgh8slhx9pbiuctxkysf"
+          />
         </div>
         <div id="restomid">
           <div>
             <h1>INOX</h1>
           </div>
 
-          {navSize? <RestoShotAddress />:null}
-          {navSize?null:<RestoAddress/>}
-          
+          {navSize ? <RestoShotAddress /> : null}
+          {navSize ? null : <RestoAddress />}
+
           {/* header mid search div */}
-          <div id={navSize?"reatoMidSearchAfter":"reatoMidSearch"}>
+          <div id={navSize ? "reatoMidSearchAfter" : "reatoMidSearch"}>
             <div id="reatoMidSearchDiv1">
               <p>
                 <SearchIcon />
@@ -104,9 +102,9 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <div id="restoOfferDiv">
-            <div className="restoOfferTag">
-              <b>OFFER</b>{" "}
+          <div id={navSize?"restoOfferDivAfter":"restoOfferDiv"}>
+            <div className={navSize?"restoOfferTagAfter":"restoOfferTag"}>
+              <b>OFFER</b>
             </div>
             <div>
               <div className="restoOfferFlex">
@@ -116,6 +114,7 @@ const Header = () => {
               <div className="restoOfferFlex">
                 <LocalOfferIcon />
                 <div>15% off upto ₹100 | Use SBIC100 Above ₹400</div>
+                <a href=""></a>
               </div>
             </div>
           </div>
@@ -123,50 +122,29 @@ const Header = () => {
       </div>
 
       <div id="restoItemBody">
-        <div id="restoCat" >
-          {
-            arr.map((e)=>{
-              return <p>{e}</p>
-            })
-          }
+        <div id="restoCat">
+          {arr.map((e) => {
+            return <a href={"#"+e}><p className="hoverColor" >{e}</p></a>;
+          })}
         </div>
         <div id="restoCatBody">
-         
-          <div>
           {
-            
-            arr.map((e)=>{
-              console.log(e)
-              console.log(item[e])
-              return(
+            arr.map((e) => {
+              console.log(e);
+              console.log(item[e]);
+              return (
                 <>
-                 <h1 className="mapSmallItemH1" >{e}</h1>
-                 <div className="mapSmallItem" >{item[e].length} Items</div>
-                {
-                item[e].map((x)=>{
-                  return singleItem(x.name,x.price,x.image)
-                })
-              }
+                  <h1 className="mapSmallItemH1" id={e}>{e}</h1>
+                  <div className="mapSmallItem" >{item[e].length} Items</div>
+                  {item[e].map((x) => {
+                    return singleItem(x.name, x.price, x.image);
+                  })}
                 </>
-               
-                
-              )
+              );
             })
 
-          
-            
-            // Object.keys(item).map(function(keyName, keyIndex) {
-            //   // use keyName to get current key's name
-            //   // and a[keyName] to get its value
-            //   console.log(keyName)
-            //   item[keyName].map((e)=>{
-            //      singleItem()
-            //   })
-            // })
-            // mdfsdfj
             
           }
-          </div>
         </div>
         <div id="restoCart">
           <h1>Cart Empty</h1>
@@ -174,8 +152,18 @@ const Header = () => {
           <p>Good food is always cooking! Go ahead, order some yummy items from the menu.</p>
         </div>
       </div>
-      <RestaurantFooter/>
+      <div>
+     
+      </div>
+
+       
+      
     </div>
+
+    <RestaurantFooter />
+
+    </>
+    
   );
 };
 

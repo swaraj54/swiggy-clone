@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  height: 10vw;
+  background-color: antiquewhite;
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 19vw;
+  width: 15vw;
+  background-color: wheat;
+}
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+}
+.sticky {
+  background-color: aqua;
+  height: 20vw;
+  width: 15vw;
+  position: sticky;
+  top: 200px;
+}
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer {
+  width: 100%;
+  height: 10vw;
+  background-color: bisque;
+  margin-top: 10px;
+}
