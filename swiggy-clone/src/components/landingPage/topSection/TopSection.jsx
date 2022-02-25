@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import "./TopSection.css";
 import Button from "@material-ui/core/Button";
-// import MyLocationIcon from '@mui/icons-material/MyLocation';
+import MyLocationIcon from '@mui/icons-material/MyLocation';
 import Authentication from "../authentication/Authentication";
 import { AuthContext } from '../AuthContext';
 
@@ -12,7 +12,7 @@ const TopSection = () => {
   const [count, setCount] = useState(0);
   const [authDiv, setAuthDiv] = useState(false);
   const [authOption, setAuthOption] = useState("signup");
-  const {auth, toggleAuthDiv} = useContext(AuthContext)
+  const {auth,signupOtp, toggleAuthDiv,toggleSignupOtp,loginOtp,toggleLoginOtp} = useContext(AuthContext)
 
  useEffect(() => {
     setTimeout(() => {
@@ -35,6 +35,13 @@ const TopSection = () => {
        if(auth){
             toggleAuthDiv()
            } 
+       if(signupOtp){
+        toggleSignupOtp(false)
+       }
+       if(loginOtp){
+                toggleLoginOtp(false)
+            }
+
     }} style={{opacity: auth ? "0.9" : "1",  backgroundColor: auth ? "rgb(190, 190, 190)" : "transparent"}}>
         <div id="landingTopLeftSide" className="landingTopSectionPart1"> 
         <div id="landingTopLeftContent">
@@ -66,7 +73,7 @@ const TopSection = () => {
             <div id="inputBoxDiv">
             <div id="locationButtonDiv">
                 <input id="inputBox" type="text" placeholder='Enter your dellivery location' style={{ backgroundColor: auth ? "rgb(190, 190, 190)" : "transparent"}} />
-                {/* <Button endIcon={<MyLocationIcon className="locationLogo" />} className="locationButton">Locate me</Button> */}
+                <Button endIcon={<MyLocationIcon className="locationLogo" />} className="locationButton">Locate me</Button>
                 </div> 
 
                    <Button className="foodButton">Find food</Button>

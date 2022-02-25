@@ -266,7 +266,7 @@ const Footer = () => {
           <h2 id="copyRight">© 2022 Swiggy</h2>
           <div id="contactSocialLogo">
               <img src="landingImages/whiteFacebook.png" alt="" className="footerSocialLogoImg" />
-              <img src="landingImages/whiteMail.png" alt="" className="footerSocialLogoImg" />
+              <img src="landingImages/pinInterest.png" alt="" className="footerSocialLogoImg" />
               <img src="landingImages/whiteInstagram.png" alt="" className="footerSocialLogoImg" />
               <img src="landingImages/whiteTwitter.png" alt="" className="footerSocialLogoImg" />
           </div>

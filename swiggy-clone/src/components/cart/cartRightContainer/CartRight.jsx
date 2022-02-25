@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import "./cartRight.css";
 import { AuthContext } from '../../landingPage/AuthContext';
+import {Link} from "react-router-dom";
 
 const CartRight = () => {
 
@@ -121,7 +122,7 @@ const CartRight = () => {
           Review your order and address details to avoid cancellations
           </h2>
           <p className="cartRightBottomContent"><b>Note:</b> Please ensure your address and order details are correct. This order, if cancelled, is non-refundable.</p>
-          <button id="readPolicy"> Read Policy</button>
+          <button id="readPolicy"><Link to="policy">Read Policy</Link></button>
         </div>
      </div>
     );
