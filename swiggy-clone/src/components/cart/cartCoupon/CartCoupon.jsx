@@ -52,7 +52,7 @@ const CartCoupon = () => {
 
 
     return (
-        <div className='couponApplyDiv'   style={{right : coupon ? "0" : "-36vw"}}>
+        <div className='couponApplyDiv' style={{right : coupon ? "0" : "-36vw"}}>
            <div className="couponApplyContentDiv">
            <CloseIcon className="closeIcon" onClick={()=>{
                toggleCoupon();

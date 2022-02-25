@@ -33,14 +33,28 @@ function Help() {
         <div className="faq-top-second">
           <div className="faq-top-second-first">
           {/* onClick={()=> setActive("Firstcard")}  */}
-            <div onClick={changeStyle1 }   className={style1}>
+            {/* <div onClick={()=> setActive("Firstcard") }  style={{backgroundColor:active === "Firstcard" ? "white" : 'transparent'}}  className={style1}>
               <h4>Partner Onboarding</h4>
             </div>
-            <div onClick={changeStyle2, ()=> setActive("Secondcard") }  className={style2}>
+            <div onClick={ ()=> setActive("Secondcard") }   style={{backgroundColor:active === "Secondcard" ? "white" :'transparent'}} className={style2}>
               <h4>Legal</h4>
             </div>
-            <div onClick={changeStyle, ()=> setActive("Thirdcard") } className={style}>
+            <div onClick={ ()=> setActive("Thirdcard") }  style={{backgroundColor:active === "Thirdcard" ? "white" :'transparent'}} className={style}>
               <h4>FAQs</h4>
+            </div> */}
+
+
+
+            <div id="faqContainer">
+               <div onClick={()=> setActive("Firstcard") }  style={{backgroundColor:active === "Firstcard" ? "white" : 'transparent'}}  className={style1}>
+              <h4>Partner Onboarding</h4>
+            </div>
+            <div onClick={ ()=> setActive("Secondcard") }   style={{backgroundColor:active === "Secondcard" ? "white" :'transparent'}} className={style2}>
+              <h4>Legal</h4>
+            </div>
+            <div onClick={ ()=> setActive("Thirdcard") }  style={{backgroundColor:active === "Thirdcard" ? "white" :'transparent'}} className={style}>
+              <h4>FAQs</h4>
+            </div>
             </div>
           </div>
           { active === "Firstcard" && <Help1/>}   

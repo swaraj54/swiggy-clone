@@ -3,9 +3,8 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux'
 import './FoodItems.css'
-import {GET_DATA} from '../../../../Redux/Actions/action'
+import {GET_DATA} from "../../../../redux/Actions/action.js"
 import FoodItem from '../FoodItem/FoodItem'
-
 
 
 function FoodItems() {

@@ -69,7 +69,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/#"
+                  to="/help"
                 >
                   <span>
                     <svg
@@ -105,7 +105,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/#"
+                  to="/cart"
                 >
                   <span>
                     <svg
