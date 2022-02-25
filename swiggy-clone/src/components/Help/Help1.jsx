@@ -1,4 +1,3 @@
-import React from 'react';
 import './SyleSheetHelp.css';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -6,30 +5,11 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+export const Help1 = () => {
 
-
-function Help() {
-  
-
-  return (
-    <>
-      <div sx={{'&:hover': {color: "#f77103"}}} className="faq-top" >
-        <div className="faq-top-first">
-          <h1   >Help & Support</h1>
-          <h3>Let's take a step ahead and help you better.</h3>
-        </div>
-        <div className="faq-top-second">
-          <div className="faq-top-second-first">
-            <div className="faq-top-second-first-div">
-              <h4>Partner Onboarding</h4>
-            </div><div className="faq-top-second-first-div2">
-              <h4>Legal</h4>
-            </div><div className="faq-top-second-first-div2">
-              <h4>FAQs</h4>
-            </div>
-          </div>       
-          <div className="faq-top-second-second">
-            <h2>Partner Onboarding</h2>
+    return <>
+        <div className="faq-top-second-second">
+            <h2>Partner Onboarding </h2>
 
           <Accordion sx={{color:"#6a6c75"}}>
             <AccordionSummary
@@ -145,10 +125,5 @@ function Help() {
           </Accordion>
           
           </div>
-        </div>
-      </div>
     </>
-  )
 }
-
-export default Help

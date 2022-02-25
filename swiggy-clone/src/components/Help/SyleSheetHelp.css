@@ -2,13 +2,13 @@
     width:100%;
      background-color: #357188;
      height: 130vh;
-     border: 1px solid red;
+     /* border: 1px solid red; */
 }
 .faq-top-first {
     margin-left: 3%;
     color:white;
     text-align: left;
-    margin-top:10vh;
+    padding-top:7vh;
     
 }
 .faq-top-first h1 {
@@ -41,17 +41,74 @@
     width: 74%;
     text-align:left;
 }
+
 .faq-top-second-first-div h4 {
     color:#282c3f;
     text-align: left;
     margin-left:14%;
     padding : 3.2vh;
 }
+
 .faq-top-second-first-div2 h4 {
+    color:#6a6c75;
+    text-align: left;
+    margin-left:17%;
+    padding : 2vh;
+}
+.faq-top-second-first-div-change2{
+    background-color:white;
+    color:#6a6c75;
+    margin-top: 1vh;
+    padding : 2vh;
+    height: 5.5vh;
+}
+.faq-top-second-first-div-change2 h4{
+    color:black;
+    text-align: left;
+    margin-left:25%;
+    margin-top: 1vh;
+}
+
+
+.faq-top-second-first-div3 h4 {
     color:#6a6c75;
     text-align: left;
     margin-left:25%;
     padding : 2vh;
+}
+.faq-top-second-first-div-change3{
+    background-color:white;
+    color:#6a6c75;
+    margin-left:10%;
+    margin-top: 1vh;
+    padding : 2vh;
+    height: 5.5vh;
+}
+.faq-top-second-first-div-change3 h4{
+    color:black;
+    text-align: left;
+    margin-left:25%;
+    margin-top: 1vh;
+}
+.faq-top-second-first-div1 h4 {
+    color:#6a6c75;
+    text-align: left;
+    margin-left:25%;
+    padding : 2vh;
+}
+.faq-top-second-first-div-change1{
+    background-color:white;
+    color:#6a6c75;
+    margin-left:10%;
+    margin-top: 1vh;
+    padding : 2vh;
+    height: 5.5vh;
+}
+.faq-top-second-first-div-change1 h4{
+    color:black;
+    text-align: left;
+    margin-left:25%;
+    margin-top: 1vh;
 }
 .faq-top-second-second h2 {
     color:#282c3f;
@@ -78,4 +135,8 @@
     background-color: white;
     font-weight: bold;
     margin-top: 2vh;
+}
+
+.bccg {
+    background-color: white;
 }
