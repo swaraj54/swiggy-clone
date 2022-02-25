@@ -16,8 +16,12 @@ function App() {
 
       <Routes>
         <Route path='/' element={<LandingPage/>}></Route>
+<<<<<<< Updated upstream
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/cart/policy" element={<ReadPolicy />}></Route>
+=======
+        {/* <Route path="/cart" element={<Cart />}></Route> */}
+>>>>>>> Stashed changes
         {/* <Route path="/Menu" element={<Menu />}></Route> */}
         {/* <Route path='/search' element={<Search/>}></Route>
         <Route path='/offers/restaurant' element={<RestaurantOffers/>}></Route>
