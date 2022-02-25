@@ -15,7 +15,7 @@ const Cart = () => {
   const [user, setUser] = useState(false);
 
   return (
-    <div style={{overflowX:"hidden"}}>
+    <div style={{overflowX:"hidden"}}> 
       cart page
 
       <CartCoupon />
@@ -68,7 +68,7 @@ const Cart = () => {
                   <div
                     id="signupInputDiv"
                     style={{
-                      display: authButton === "signup" ? "flex" : "none",
+                      display: authButton === "signup" ? "flex" : "none"
                     }}
                   >
                     <p className="cartSignUpHead">
@@ -240,7 +240,7 @@ const Cart = () => {
                 id="cartLeftTopImage"
                 style={{ display: user ? "none" : "block" }}
               >
-                <img
+                <img style={{height:"9vw"}}
                   src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_147,h_140/Image-login_btpq7r"
                   alt=""
                 />

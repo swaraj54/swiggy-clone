@@ -48,9 +48,9 @@ const CartRight = () => {
                   
 
                   <div id="quantityUpdateDiv">
-                  <button className="quantityUpdateButton">-</button>
+                  <p className="eachItemQuantity">-</p>
                   <p className="eachItemQuantity">{item.itemQuantity}</p>
-                  <button className="quantityUpdateButton">+</button>
+                  <p className="eachItemQuantity">+</p>
                   </div>
                   
                   <div id="itemPriceDiv">

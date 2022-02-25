@@ -115,6 +115,10 @@ margin-left: 1vw;
     padding: 1vw;
     height: 2.4vw;
     margin-left: -0.2vw;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
   .differentCouponDiv .couponDetailsContent{
     color: #3e4152;

@@ -1,7 +1,7 @@
 /* top section */
 
 .landingPage {
-  width: 100%;
+  width: 100vw;
   font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
   overflow-x: hidden;
 }

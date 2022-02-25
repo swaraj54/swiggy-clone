@@ -6,7 +6,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const CartLeftMiddle = () => {
   const [address, setAddress] = useState(true);
-
+ 
   return (
     <div id="cartLeftMiddleContainer">
       <div className="iconContainerDiv">
@@ -29,7 +29,7 @@ const CartLeftMiddle = () => {
           <button className="addressButton" onClick={()=>{
               setAddress(true)
           }}>Deliver here</button>
-        </div>
+        </div> 
         <div className="addressDivItems">
           <AddLocationAltOutlinedIcon className="addressCardIcon" />
           <h2 className="addressCardTitle">Other</h2>
@@ -42,7 +42,7 @@ const CartLeftMiddle = () => {
         </div>
       </div>
 
-     <div id="deliveryAddressTopDiv">
+     <div id="deliveryAddressTopDiv"> 
      <h2
         className="cartSignUpDivTitle"
         style={{ display: !address ? "none" : "block" }}
@@ -54,7 +54,7 @@ const CartLeftMiddle = () => {
       }}>CHANGE</h2>
      </div>
       <div id="authorisedUser" style={{ display: !address ? "none" : "block" }}>
-        <h2 className="userDetails">Other</h2>
+        <h2 className="userDetails" style={{marginTop:"-1vw"}}>Other</h2>
         <p className="addressDetailOfUserSaved">
             flat no.2, Ram Tonde, Mumbai Airport, Lower Parel, Friends Colony,
             Hallow Pul, Kurla, Mumbai, Maharashtra 400070, India

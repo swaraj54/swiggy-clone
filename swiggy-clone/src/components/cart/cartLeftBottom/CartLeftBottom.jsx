@@ -10,7 +10,7 @@ import BentoIcon from "@mui/icons-material/Bento"; // food card
 import { CashPayment, WalletPayment, CreditPayment, UPIPayment, FoodCardPayment } from "../cartPaymentMethods/CartPayment";
 
 const CartLeftBottom = () => {
-  const allIcons = [
+  const allIcons = [ 
     {
       iconName: <LocalAtmIcon className="paymentMethodUIicon" />,
       contentName: "Pay on Delivery",

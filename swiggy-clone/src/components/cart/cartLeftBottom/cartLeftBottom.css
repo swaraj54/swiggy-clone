@@ -26,21 +26,23 @@
 #cartLeftBottomContainer #paymentMethods{
     background-color: rgb(228, 227, 241);
     width:16vw;
-    padding:1vw 0 2vw 2vw;
+    padding:0vw 0 2vw 2vw;
 }
 #cartLeftBottomContainer .paymentMethodNames{
 font-size:1.2vw;
 margin-left: 1vw;
+font-weight: 100;
 }
 #cartLeftBottomContainer .paymentMethodIcons{
-margin-top:1vw;
-padding: 1vw 0 1vw 0.6vw;
+padding: 0.8vw 0 1vw 0.1vw;
 }
 #cartLeftBottomContainer .paymentMethodUIicon{
 font-size:1.5vw;
+margin-top:1vw;
 }
 #cartLeftBottomContainer #paymentMethods .paymentMethodIcons1{
 background-color: #ffffff;
+margin-top: 1vw;
 }
 
 #cartLeftBottomContainer #paymentMethodContainer{
