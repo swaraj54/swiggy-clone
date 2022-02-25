@@ -1,0 +1,144 @@
+.couponApplyDiv{
+    width: 36vw;
+    height:100vh;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 2;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    position: fixed;
+    transition: all 1s;
+}
+.couponApplyContentDiv{
+    width: 22vw;
+    margin-left: 4vw;
+    margin-top: 1.5vw;
+    text-align: left;
+}
+
+
+.couponApplyDiv #couponTopInputDiv {
+    height: 3.5vw;
+    width: 23.32vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.couponApplyDiv #inputBox{
+    margin-left:1vw;
+    border:none;
+    width: 17vw;
+    padding: 0 1vw;
+}
+.couponApplyDiv #inputBox::placeholder{
+  font-size: 1vw;
+  color: #b0b3be;
+  font-weight: bold;
+}
+ 
+.couponApplyDiv .foodButton{
+    background-color: rgb(255, 126, 20);
+    width:7vw;
+    border: none;
+    height: auto;
+    color:white;
+    font-size: 1vw;
+    font-weight: bolder;
+    right:0;
+    margin-left: -0.2vw;
+}
+.couponApplyDiv #inputBox:focus{
+    outline: none;
+}
+
+.couponApplyDiv #couponAvailableBox{
+padding:2vw 0 1vw 2vw;
+width: 23.32vw;
+border:1px solid rgb(230, 229, 229);
+margin-top: 2vw;
+height: 80vh;
+overflow: scroll;
+}
+
+.couponApplyDiv #couponAvailableBox::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.couponApplyDiv #couponAvailableBoxTitle{
+    color: #7e808c;
+    font-weight: 600;
+    margin: 0 0 1.66vw;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+}
+
+
+/* // special; button  */
+
+.couponApplyDiv .differentCouponDiv{
+    border-bottom: 1px dotted #b0b3be;
+    padding: 2vw 0;
+}
+.differentCouponDiv .couponButtonShow{
+display:flex;
+width: 12vw;
+}
+.differentCouponDiv .couponButtonShowImgDiv{
+  width:3vw;
+  height: 2.3vw;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  background-color:  #fdf4d1;
+  display: flex;
+  align-items: center;
+}
+.differentCouponDiv  .couponButtonShowImg{
+height: 0.6vw;
+width: 1.3vw;
+margin-left: 1vw;
+}
+.differentCouponDiv .couponButtonShowName{
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    font-size: 1.07vw;
+    font-weight: 550;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+    padding: 0 1vw;
+    background-color: #fdf4d1; 
+    padding: 1vw;
+    height: 2.4vw;
+    margin-left: -0.2vw;
+  }
+  .differentCouponDiv .couponDetailsContent{
+    color: #3e4152;
+    font-size: 1vw;
+    font-weight: 520;
+    width: 18vw;
+}
+.differentCouponDiv .couponApplyAbove{
+    color: #686b78;
+    font-size: .8vw;
+    margin-top: 0.7vw;
+}
+.differentCouponDiv .moreButton{
+  font-weight: bold;
+}
+.differentCouponDiv .moreButton:focus{
+outline: none;
+}
+.differentCouponDiv .applyCouponOrangeButton{
+color:#fc8019;
+border: 1px solid #fc8019;
+font-weight:550;
+margin-top: 0.3vw;
+}
+.differentCouponDiv .applyCouponOrangeButton:focus{
+outline:none;
+}

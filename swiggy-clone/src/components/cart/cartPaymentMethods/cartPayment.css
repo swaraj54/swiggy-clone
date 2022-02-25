@@ -1,0 +1,119 @@
+.paymentMethodsPage .paymentImg1{
+    margin-top:2.3vw;
+    margin-bottom: 3vw;
+    height:5vw;
+}
+.paymentMethodsPage .paymentMethodsPageTitle{
+    color: #282c3f;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+.paymentMethodsPage {
+    font-size: 0.8vw;
+    margin-top: 0.15vw;
+    color: #7e808c;
+    font-weight: 300;
+    line-height: 1vw;
+    width:20vw;
+}
+.paymentMethodsPage .differentWalletDiv{
+border: 1px solid rgb(194, 190, 190);
+padding: 0 1.5vw 1.5vw;
+margin-top: 2vw;
+}
+.paymentMethodsPage .differentWalletDiv:first-child{
+    margin-top: 0vw; 
+}
+.paymentMethodsPage .wallletPaymentImage{
+    height:1.7vw;
+    width:2.8vw;
+    margin-top:2vw;
+    margin-bottom: 1vw;
+}
+.differentWalletDiv{
+    border: 1px solid rgb(194, 190, 190);
+    padding: 0 1.5vw 1.5vw;
+    margin-top: 0vw;
+}
+
+
+.differentWalletDiv .foodCardTitle{
+    color: #282c3f;
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-bottom: 1.6vw;
+}
+.differentWalletDiv .weAccept{
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #7e808c;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-right: 0.4vw;
+}
+.differentWalletDiv .foodCardImage{
+    height:1vw; 
+    margin-top: -0.5vw;
+}
+
+/* //form styling */
+#foodCardDiv{
+    width:auto;
+    border: none;
+}
+#foodCardDiv #foodInputDiv{
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    margin-top:2vw;
+    margin-bottom: 1.5vw;
+}
+#foodCardDiv #expiryOtp{
+display: flex;
+width:22vw;
+}
+#foodInputDiv .inputItem{
+height: 4.5;
+width: 22vw;
+border: 1px solid #d4d5d9;
+}
+#foodInputDiv .inputItem input{
+    background-color: transparent;
+    line-height: normal;
+    border: none;
+    outline: none;
+    height: 4vw;
+    width: 100%;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0 1.3vw;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+#foodInputDiv .inputItem input:focus{
+    padding-top:1vw;
+}
+#foodInputDiv .inputItem input:focus::placeholder{
+position:absolute;
+font-size:0.8vw;
+font-weight: 600;
+transition:all 0.3s;
+}
+#foodCardDiv .saveFoodCard{
+    margin-left: 15px;
+    vertical-align: middle;
+    color: #3d4152;
+    font-size: 13px;
+    font-weight: 300;
+}
+#foodCardDiv .saveFoodCard .checkBoxFood{
+    border-color: #60b246;
+    background-color: #60b246;
+    color: #fff;
+    margin: 0.8vw 0.4vw  0.8vw -0.4vw;
+}
