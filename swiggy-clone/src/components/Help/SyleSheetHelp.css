@@ -1,0 +1,142 @@
+.faq-top{
+    width:100%;
+     background-color: #357188;
+     height: 130vh;
+     /* border: 1px solid red; */
+}
+.faq-top-first {
+    margin-left: 3%;
+    color:white;
+    text-align: left;
+    padding-top:7vh;
+    
+}
+.faq-top-first h1 {
+  font-size: 4.5vh;
+}
+.faq-top-first h3 {
+    margin-top: -3vh;
+    font-size:2.5vh;
+    font-weight: normal;
+}
+.faq-top-second {
+    margin-top: 5vh;
+    width:99.5%;
+    margin-left:1.5%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+}
+.faq-top-second-first {
+    flex:1;
+    width:20%;
+    margin-left:4%;
+    margin-top:8vh;
+    background: #edf1f7;
+    height: 90vh;
+}
+.faq-top-second-second {
+    margin-left:2%;
+    margin-top:8vh;
+    width: 74%;
+    text-align:left;
+}
+
+.faq-top-second-first-div h4 {
+    color:#282c3f;
+    text-align: left;
+    margin-left:14%;
+    padding : 3.2vh;
+}
+
+.faq-top-second-first-div2 h4 {
+    color:#6a6c75;
+    text-align: left;
+    margin-left:17%;
+    padding : 2vh;
+}
+.faq-top-second-first-div-change2{
+    background-color:white;
+    color:#6a6c75;
+    margin-top: 1vh;
+    padding : 2vh;
+    height: 5.5vh;
+}
+.faq-top-second-first-div-change2 h4{
+    color:black;
+    text-align: left;
+    margin-left:25%;
+    margin-top: 1vh;
+}
+
+
+.faq-top-second-first-div3 h4 {
+    color:#6a6c75;
+    text-align: left;
+    margin-left:25%;
+    padding : 2vh;
+}
+.faq-top-second-first-div-change3{
+    background-color:white;
+    color:#6a6c75;
+    margin-left:10%;
+    margin-top: 1vh;
+    padding : 2vh;
+    height: 5.5vh;
+}
+.faq-top-second-first-div-change3 h4{
+    color:black;
+    text-align: left;
+    margin-left:25%;
+    margin-top: 1vh;
+}
+.faq-top-second-first-div1 h4 {
+    color:#6a6c75;
+    text-align: left;
+    margin-left:25%;
+    padding : 2vh;
+}
+.faq-top-second-first-div-change1{
+    background-color:white;
+    color:#6a6c75;
+    margin-left:10%;
+    margin-top: 1vh;
+    padding : 2vh;
+    height: 5.5vh;
+}
+.faq-top-second-first-div-change1 h4{
+    color:black;
+    text-align: left;
+    margin-left:25%;
+    margin-top: 1vh;
+}
+.faq-top-second-second h2 {
+    color:#282c3f;
+    margin-left:2% ;
+}
+.faq-top-second-first-div {
+    width:91%;
+    margin-left:10%;
+    background-color:white;
+    height: 10vh;
+}
+.faq-top-second-first-div2{
+    width:90%;
+    margin-left:10%;
+    height: 10vh;
+}
+
+.butcol {
+    border:1px solid #f77103;
+    color:#f77103;
+    font-size:2vh;
+    height: 6vh;
+    width: 10vw;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+.bccg {
+    background-color: white;
+}
