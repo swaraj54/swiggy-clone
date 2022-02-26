@@ -29,16 +29,16 @@ function FoodItems() {
 
        useEffect(()=>{
            const getData = () =>{
-               axios.get('https://www.themealdb.com/api/json/v1/1/categories.php').then((resp)=>{
+               axios.get('https://swiggybackendclone.herokuapp.com/restaurantmenu').then((resp)=>{
                 //    console.log(resp.data.categories);
-                   const data = resp.data.categories;
+                   const data = resp.data;
 
 
                    for(let item of data){
                     //store data in redux store
                     dispatch(GET_DATA(item));
                    }
-                   
+
                })
            }
 
@@ -68,22 +68,17 @@ function FoodItems() {
     */
     return (
         <>
-            <div className='food_items__container'>
               {/* <h1>Hello I am food item container</h1> */}
-              <div className="foot_items_main_container">
+             
               {/* <FoodItem/> */}
-                  {
-                      foodItems.map((item)=>{
-                          return(
-                              <>
-                               <FoodItem/>
-                              </>
-                          )
-                      })
-                  }
                  
-              </div>
-            </div>
+                          
+                              <>
+                               <FoodItem />
+                              </>
+                          
+   
+          
         </>
     )
 }

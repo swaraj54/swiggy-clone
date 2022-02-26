@@ -11,11 +11,12 @@ function FoodItem() {
 
 
 
-  const firstData = foodItems[0];
+ 
   return (
-    <div className='foodItem_container'>
-
-       
+    <div className='food_items__container'>
+    <div className="foot_items_main_container">
+{foodItems.map((firstData)=>{
+return <div className='foodItem_container'>
 
       {/* Image Container */}
       <div className="img_container">
@@ -30,11 +31,9 @@ function FoodItem() {
 
        {/* Categories Container */}
        <div className="categories_container">
-         {
-           firstData.categories.map((category)=>{
-            return <span>{category},</span>
-           })
-         }
+         
+          <span>{firstData.categories},</span>
+
        </div>
 
 
@@ -80,6 +79,9 @@ function FoodItem() {
       </div>
 
 
+    </div>
+    })}
+    </div>
     </div>
   )
 }

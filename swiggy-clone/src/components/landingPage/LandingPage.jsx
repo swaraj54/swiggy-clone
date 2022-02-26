@@ -13,8 +13,6 @@ const LandingPage = () => {
   console.log('auth:', auth);
 
   const {routeControl, toggleRouteControl} = useContext(RouteContext);
-  
-
  toggleRouteControl(false);
   
   return (
