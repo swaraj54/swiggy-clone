@@ -7,6 +7,9 @@ import StarIcon from '@mui/icons-material/Star';
 function FoodItem() {
 
   const foodItems = useSelector((state) => state.foodItemsReducer.foodItems);
+  console.log('foodItems:', foodItems)
+
+
 
   const firstData = foodItems[0];
   return (

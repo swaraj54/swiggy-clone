@@ -34,7 +34,7 @@ export const LocationBased = () => {
           </div>
         </div>
       </div>
-      <SelectLocationSlider />
+      {/* <SelectLocationSlider /> */}
       <div style={{ backgroundColor: "#f7f7f7" }}>
         <div className="locationBasedMainDiv2">
           <span>
