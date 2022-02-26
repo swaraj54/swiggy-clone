@@ -1,0 +1,170 @@
+.locationBasedMainDiv {
+  font-size: 62.5%;
+}
+.locationBasedMainDiv1 {
+  padding: 0 20px;
+  height: 287px;
+  background-color: #494d60;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.locationBasedMainDiv11 {
+  max-width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+.locationBasedMainDiv11 h1 {
+  font-size: 320%;
+  margin: 0.67em 0;
+}
+.locationBasedMainDiv111 {
+  font-size: 160%;
+  margin-top: 20px;
+}
+.locationBasedMainSearchDiv {
+  background-color: #fff;
+  color: #535665;
+  display: flex;
+  align-items: center;
+  width: 430px;
+  height: 45px;
+  margin-top: 16px;
+  padding: 0 20px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 140%;
+}
+.locationBasedMainSearchDiv2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: #fc8019;
+  color: #fff;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 116px;
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+}
+.locationBasedMainDiv2 {
+  height: 30px;
+  color: #93959f;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  min-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  font-weight: 300;
+  padding: 7px 0;
+}
+.locationBasedMainDiv2 span span {
+  font-weight: 400;
+}
+.locationBasedMainAbout,
+.locationBasedMainPicks,
+.locationBasedMainLocation,
+.locationBasedMainRestaurants {
+  max-width: 1200px;
+  min-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.locationBasedMainAboutHeading,
+.locationBasedMainPicksHeading,
+.locationBasedMainLocationHeading,
+.locationBasedMainRestaurantsHeading {
+  font-size: 320%;
+  margin-bottom: 22px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  color: #282c3f;
+}
+.locationBasedMainAboutDesc {
+  font-size: 200%;
+  font-weight: 300;
+  line-height: 28px;
+  color: #686b78;
+  padding-right: 100px;
+}
+.locationBasedMainPicksCards {
+  margin-top: 33px;
+}
+.locationBasedMainPicksCardRow {
+  display: flex;
+}
+.PicksCard {
+  margin-right: 30px;
+  width: 380px;
+  height: 380px;
+  overflow: hidden;
+  object-fit: cover;
+  text-decoration: none;
+}
+.PicksCardImg {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.PicksCard:hover img {
+  /* transition: transform1 2s ease-in-out; */
+  /* transform-origin: center; */
+  transform: scale(1.1);
+  transition: 300ms;
+}
+/* @keyframes transform1 {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 120%;
+  }
+} */
+.PicksCardHeading {
+  font-size: 320%;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  top: -65px;
+  position: relative;
+}
+.restaurantsCard {
+  position: relative;
+}
+.restaurantsCardLink {
+  background: #fff;
+  display: block;
+  text-decoration: none;
+  margin: -20px -20px -41px;
+}
+.locationBasedMainAbout {
+  padding: 20px 20px 57px;
+  border: 1px solid #fff;
+  contain: content;
+  position: relative;
+  width: 254px;
+}
+.restaurantsCardLinkDivImg {
+  background: #eef0f5;
+  width: 254px;
+  height: 160px;
+  position: relative;
+}
+.restaurantsCardLinkDivImg img {
+  width: 254px;
+  height: 160px;
+}
+.cardDetailsDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  font-size: 120%;
+  justify-content: space-between;
+  color: #535665;
+}
