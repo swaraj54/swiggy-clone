@@ -155,7 +155,7 @@ const ReadPolicy = () => {
         <ul className="_1JNGZ">
           <li className="_1fo6c">
             <div className="_2CgXb">
-              <a className="_1T-E4" href="/support">
+              <a className="_1T-E4" href="/help">
                 <span className="_3yZyp">
                   <svg
                     className="_1GTCc"

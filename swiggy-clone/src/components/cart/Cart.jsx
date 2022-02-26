@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./cart.css";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -7,12 +7,22 @@ import CartLeftBottom from "./cartLeftBottom/CartLeftBottom";
 import Footer from "../landingPage/footer/Footer";
 import CartRight from "./cartRightContainer/CartRight";
 import CartCoupon from "./cartCoupon/CartCoupon";
+import Authentication from "../landingPage/authentication/Authentication";
 
 const Cart = () => {
+
   const [authButton, setAuthButton] = useState(" ");
   const [otp, setOtp] = useState(false);
   const [signupOtp, setSignUpOtp] = useState(false);
   const [user, setUser] = useState(false);
+
+  const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
+  useEffect(()=>{
+    if(currentUser !== "not found"){
+      setUser(true)
+    }
+  }, [currentUser])
+ 
 
   return (
     <div style={{overflowX:"hidden"}}> 
@@ -232,7 +242,7 @@ const Cart = () => {
                   style={{ display: !user ? "none" : "block" }}
                 >
                   <h2 className="userDetails">
-                    Nanda Kishor Palei | 8895370647
+                    {`${currentUser.name} | ${currentUser.phone}`}
                   </h2>
                 </div>
               </div>

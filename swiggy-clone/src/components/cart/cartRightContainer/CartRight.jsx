@@ -122,7 +122,7 @@ const CartRight = () => {
           Review your order and address details to avoid cancellations
           </h2>
           <p className="cartRightBottomContent"><b>Note:</b> Please ensure your address and order details are correct. This order, if cancelled, is non-refundable.</p>
-          <button id="readPolicy"><Link to="policy">Read Policy</Link></button>
+          <button id="readPolicy"><Link to="policy" style={{color:"#ec6148", textDecoration:"none"}}>Read Policy</Link></button>
         </div>
      </div>
     );

@@ -33,10 +33,16 @@ const [signupUser, setSignupUser] = useState({
    console.log(signupUser)
    axios.post("http://localhost:3003/auth/newuser", signupUser)
    .then((res)=>{
-       alert(res.data)
-       
+
+       if(res.data === "userExist"){
+           alert("User Exist Do login");
+           window.location.href="/"
+       }else{
+                 
        setCurrentOtp(res.data);
-       console.log(res)
+       console.log(res) 
+       }
+
    })
    .catch((e)=>{
        console.log(e)
@@ -68,18 +74,72 @@ const [otpVerify, setOtpVerify] = useState(" ")
          password: signupUser.password
      })
    .then((res)=>{
-       alert(res.data)
+       console.log(res.data)
+
+       // redirect after authentication successful
+       localStorage.setItem('currentUserId', JSON.stringify(res.data));
+       window.location.href="/cart"
    })
    .catch((e)=>{
        alert(e.message)
    })
 }
 else{
-    alert([currentOtp ,otpVerify])
     alert("Otp not matched");
 }
   }
 
+
+
+
+  // log in data & processing
+
+  const [loginPhone, setLoginPhone] = useState("");
+  const [loginDataOtp, setLoginDataOtp] = useState("");
+  const [userOtp, setUserOtp] = useState("")
+
+  async function loginSubmit(e){
+      e.preventDefault()
+        await axios.post("http://localhost:3003/auth/verifyuser",{phone:loginPhone})
+        .then((res)=>{
+           if(res.data == "notExist"){
+               alert("User Not Exist")
+              window.location.href = "/";
+           }else{
+            setLoginDataOtp(res.data)
+           }
+
+        })
+        .catch((e)=>{
+            alert(e.message)
+        })
+  }
+
+
+  // log in data verify
+
+async function verifyExistingUser(e){
+    e.preventDefault();
+
+    if(userOtp == loginDataOtp){
+     // redirect after authentication successful
+    
+     await axios.post("http://localhost:3003/auth/getverifyuser",{phone:loginPhone})
+     .then((res)=>{
+         console.log(res.data);
+
+
+         localStorage.setItem('currentUserId', JSON.stringify(res.data));
+         window.location.href="/cart";
+     })
+     .catch((e)=>{
+        alert(e.message)
+    })
+    }
+    else{
+        alert("Invalid OTP");
+    }
+}
 
 
 
@@ -197,11 +257,13 @@ else{
 
 {/* //login section */}
         <form action="" onSubmit={(e)=>{
-            e.preventDefault()
+            loginSubmit(e)
         }}>
            <div id="signupInputDiv" style={{display:!signUp && !loginOtp ? "block" : "none"}}  >
                <div className="inputItem">
-                   <input type="text" placeholder='Phone number' required />
+                   <input type="text" placeholder='Phone number' value={loginPhone} onChange={(e)=>{
+                       setLoginPhone(e.target.value);
+                   }} required />
                </div>
            </div>
 
@@ -220,14 +282,16 @@ else{
 
 {/* login otp verify */}
 <form action="" onSubmit={(e)=>{
-            e.preventDefault()
+            verifyExistingUser(e)
         }}>
            <div id="signupInputDiv" style={{display:!signUp && loginOtp ?  "flex" : "none" }} >
                <div className="inputItem">
-                   <input type="text" placeholder='Phone number' required  />
+                   <input type="text" placeholder='Phone number' value={loginPhone} required  />
                </div>
                <div className="inputItem" required >
-                   <input type="text" placeholder='Enter OTP' required  />
+                   <input type="text" placeholder='Enter OTP' value={userOtp} onChange={(e)=>{
+                       setUserOtp(e.target.value)
+                   }} required  />
                </div>
            </div>
 
