@@ -11,8 +11,7 @@ import RestoAddress from "./RestoAddress";
 import { RestoShotAddress } from "./RestoShotAddress";
 import { RestaurantFooter } from "./RestaurantFooter";
 import { item } from "./data";
-import StickyBox from "react-sticky-box";
-import{Test} from "../test/test.jsx"
+
 var arr = [
   "Recommended",
   "Burger",
@@ -52,16 +51,92 @@ const singleItem = (name, price, image) => {
 const Header = () => {
   const [navSize, setNavSize] = useState(false);
 
+ 
+  const scrto=(e)=>{
+    console.log(e.target.textContent)
+    var vi=document.getElementById(e.target.textContent)
+    
+    vi.scrollIntoView()
+    // window.scrollTo(0, 100);
+    window.scrollBy(0, -200);
+    classChange(e.target.textContent)
+  }
+
+  
+  const classChange=(clas)=>{
+    // console.log(clas)
+    for(var i=0;i<arr.length;i++)
+    {
+      var elm=document.getElementById(arr[i]+"add")
+      // console.log(clas,arr[i])
+      if(clas==arr[i])
+      {
+        
+        elm.style.color="orange"
+        elm.style.borderRight = "3px solid  orange";
+        
+        
+        console.log(elm.style)
+        
+      }
+      else{
+        elm.style.color="black"
+        elm.style.borderRight = "none";
+       
+      }
+    }
+  }
   const navChange = () => {
     if (window.scrollY >= 20) {
       setNavSize(true);
     } else {
       setNavSize(false);
     }
-    console.log(navSize);
+   
+   
   };
 
+  const scrollChange=()=>{
+    var scroll=window.scrollY
+    if(scroll>=0 && scroll<=2185 )
+    {
+      classChange("Recommended")
+      
+    }
+    else if(scroll>=2185 && scroll<=4650 )
+    {
+    classChange("Burger")    
+    }
+    else if(scroll>=4650&& scroll<=5660 )
+    {
+      classChange("French fries")
+    }
+    else if(scroll>=5660 && scroll<=6660)
+    {
+      classChange("Garlic bread")
+    }
+    else if(scroll>=6660&& scroll<=8770 )
+    {
+      classChange("Patties")
+    }
+    else if(scroll>=8770  && scroll<=13700 )
+    {
+      classChange("Pizza")
+    }
+    else if(scroll>=13700 && scroll<=18036 )
+    {
+      classChange("Sandwich")
+    }
+    else if(scroll>=18030 && scroll<=18888 )
+    {
+      classChange("Shake")
+    }
+
+    console.log(scroll)
+  }
+
   window.addEventListener("scroll", navChange);
+  window.addEventListener("scroll", scrollChange);
 
   return (
     <>
@@ -114,7 +189,7 @@ const Header = () => {
               <div className="restoOfferFlex">
                 <LocalOfferIcon />
                 <div>15% off upto ₹100 | Use SBIC100 Above ₹400</div>
-                <a href=""></a>
+                
               </div>
             </div>
           </div>
@@ -124,15 +199,16 @@ const Header = () => {
       <div id="restoItemBody">
         <div id="restoCat">
           {arr.map((e) => {
-            return <a href={"#"+e}><p className="hoverColor" >{e}</p></a>;
+            
+            return <p id={e+"add"} onClick={(event)=>{scrto(event)}}>{e}</p>;
           })}
         </div>
         <div id="restoCatBody">
           <div>
           {
             arr.map((e) => {
-              console.log(e);
-              console.log(item[e]);
+              // console.log(e);
+              // console.log(item[e]);
               return (
                 <>
                   <h1 className="mapSmallItemH1" id={e}>{e}</h1>
