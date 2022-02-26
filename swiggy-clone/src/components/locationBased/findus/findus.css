@@ -1,0 +1,39 @@
+.findUsDiv{
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.findUsDivTitle{
+    font-size: 32px;
+    margin-bottom: 22px;
+    font-weight: 600;
+    letter-spacing: -.4px;
+    color: #282c3f;
+    text-align: left;
+}
+.findUsFlexDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.commonFlexDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.commonFlexDivItems{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 380px;
+    margin-right: 30px;
+    color: #686b78;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-transform: capitalize;
+    text-decoration: none;
+}

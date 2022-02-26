@@ -8,14 +8,14 @@
     margin: 0vw;
   }
   .landingTopSectionPart1 {
-    width: 56.73vw;
+    width: 56.73vw; 
     height: 100%;
   }
   .landingTopSectionPart2 {
     width: 44.27vw;
     height: 100%;
   }
-  #landingTopSection img {
+  #landingTopSection img { 
     width: 50vw;
   }
   #landingTopLeftContent {
@@ -177,12 +177,13 @@
       font-size: 1vw;
       font-weight: 600;
       margin-right: 0.8;
-      color: #686b78;
       line-height: 1.5;
       letter-spacing: -.3px;
+      text-decoration: none;
   }
-  #popularCityNames span{
-      color: #93959f;
+
+  #popularCityNames .lightGreyCity{
+    color: #635959;
       padding:0.5vw;
+      text-decoration: none;
   }
-  

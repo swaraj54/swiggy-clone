@@ -1,5 +1,6 @@
 .locationBasedMainDiv {
   font-size: 62.5%;
+  /* overflow-x: hidden; */
 }
 .locationBasedMainDiv1 {
   padding: 0 20px;
@@ -13,6 +14,7 @@
   max-width: 1200px;
   min-width: 1200px;
   margin: 0 auto;
+  text-align: left;
 }
 .locationBasedMainDiv11 h1 {
   font-size: 320%;
@@ -74,6 +76,7 @@
   position: relative;
   margin: 0 auto;
   margin-top: 60px;
+  
 }
 .locationBasedMainAboutHeading,
 .locationBasedMainPicksHeading,
@@ -84,6 +87,7 @@
   font-weight: 600;
   letter-spacing: -0.4px;
   color: #282c3f;
+  text-align: left;
 }
 .locationBasedMainAboutDesc {
   font-size: 200%;
@@ -149,6 +153,7 @@
   contain: content;
   position: relative;
   width: 254px;
+  text-align: left;
 }
 .restaurantsCardLinkDivImg {
   background: #eef0f5;
@@ -167,4 +172,8 @@
   font-size: 120%;
   justify-content: space-between;
   color: #535665;
+}
+#locationBasedFoodItemsDiv #locationBasedFoodItems{
+  width:70vw;
+  background-color: aqua;
 }

@@ -9,15 +9,14 @@ function FoodItem() {
   const foodItems = useSelector((state) => state.foodItemsReducer.foodItems);
 
   const firstData = foodItems[0];
-  console.log(firstData);
   return (
     <div className='foodItem_container'>
 
-      
+       
 
       {/* Image Container */}
       <div className="img_container">
-         <img src={firstData.image_url} alt="" style={{width:"254px",height:"160px"}}/> 
+         <img src={firstData.image_url} alt="" style={{width:"254px",height:"160px",  marginLeft: "1.5vw"}}/> 
       </div>
 
       {/* Title Container */}

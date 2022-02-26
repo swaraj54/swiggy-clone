@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { RouteContext } from "../routeFolder/RouteContext";
 import Authentication from "../landingPage/authentication/Authentication";
 import { AuthContext } from "../landingPage/AuthContext";
 
 function Navbar() {
-  const { routeControl, toggleRouteControl } = useContext(RouteContext);
+  const { city } = useParams()
+  const {cityName, addCityName, routeControl, toggleRouteControl } = useContext(RouteContext);
   const [authenticateShow, setAuthenticateShow] = useState(false);
   const {auth, toggleAuthDiv, signupOtp,toggleSignupOtp,loginOtp,toggleLoginOtp} = useContext(AuthContext)
 
@@ -25,7 +26,7 @@ function Navbar() {
       <header>
         <div className="main-nav">
           <div className="logo">
-            <Link to="/">
+            <Link to={`/location/${cityName}`}>
               <svg
                 className="_8pSp-"
                 viewBox="0 0 16 25"
@@ -40,8 +41,8 @@ function Navbar() {
               </svg>
             </Link>
           </div>
-          <div className="location">
-            <span>Kolkata</span>
+          <div className="location" style={{display:"flex", alignItems:"center"}}>
+            <span>{cityName}</span>
             <span>Near Eat Street, Main Road.......</span>
             {/* <span className="arrow-down">&#8964;</span> */}
           </div>

@@ -10,7 +10,7 @@ const initialState = {
             price: "₹300 FOR TWO ",
             offer_status:true,
             offer : '60%',
-            coupon_code: "STEALDEAL"
+            coupon_code: "STEALDEAL" 
         }
     ]
 }

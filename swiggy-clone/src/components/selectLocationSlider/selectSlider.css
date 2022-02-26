@@ -1,0 +1,12 @@
+.selectSliderDiv{
+
+    width: 27vw;
+    height: 90vh;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 2;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    position: fixed;
+    transition: all 1s;
+    margin-top:-30vh;
+}

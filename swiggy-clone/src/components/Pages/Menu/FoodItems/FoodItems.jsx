@@ -4,7 +4,8 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux'
 import './FoodItems.css'
 import {GET_DATA} from "../../../../redux/Actions/action.js"
-import FoodItem from '../FoodItem/FoodItem'
+import FoodItem from '../FoodItem/FoodItem';
+import {RestaurantData} from "../../../../RestaurantData"
 
 
 function FoodItems() {
@@ -29,17 +30,17 @@ function FoodItems() {
 
        useEffect(()=>{
            const getData = () =>{
-               axios.get('https://www.themealdb.com/api/json/v1/1/categories.php').then((resp)=>{
-                //    console.log(resp.data.categories);
-                   const data = resp.data.categories;
+            //    axios.get('https://www.themealdb.com/api/json/v1/1/categories.php').then((resp)=>{
+            //     //    console.log(resp.data.categories);
+            //        const data = resp.data.categories;
 
 
-                   for(let item of data){
+                   for(let item of RestaurantData){
                     //store data in redux store
                     dispatch(GET_DATA(item));
                    }
                    
-               })
+            //    })
            }
 
            getData();

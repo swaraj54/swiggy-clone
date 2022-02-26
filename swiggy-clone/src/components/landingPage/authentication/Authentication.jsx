@@ -78,7 +78,7 @@ const [otpVerify, setOtpVerify] = useState(" ")
 
        // redirect after authentication successful
        localStorage.setItem('currentUserId', JSON.stringify(res.data));
-       window.location.href="/cart"
+       window.location.href="/location"
    })
    .catch((e)=>{
        alert(e.message)
@@ -130,7 +130,7 @@ async function verifyExistingUser(e){
 
 
          localStorage.setItem('currentUserId', JSON.stringify(res.data));
-         window.location.href="/cart";
+         window.location.href="/location";
      })
      .catch((e)=>{
         alert(e.message)

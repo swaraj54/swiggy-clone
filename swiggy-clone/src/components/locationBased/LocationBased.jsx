@@ -1,14 +1,30 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Findus from "./findus/Findus";
 import "./LocationBased.css";
+import FoodItems from "../Pages/Menu/FoodItems/FoodItems"
+import { useContext, useEffect } from "react";
+import { RouteContext } from "../routeFolder/RouteContext";
+import SelectLocationSlider from "../selectLocationSlider/SelectLocationSlider";
 
 export const LocationBased = () => {
-  const { location } = useParams();
+
+  const {cityName, addCityName } = useContext(RouteContext);
+
+  const { city } = useParams();
+  console.log('city:', city)
+
+  useEffect(()=>{
+    addCityName(city.substring(5, city.length))
+  },[])
+
+
+
   return (
     <div className="locationBasedMainDiv">
       <div className="locationBasedMainDiv1">
         <div className="locationBasedMainDiv11">
-          <h1>Great restaurants in {location}, delivering to you</h1>
+          <h1 style={{marginTop:"3vw"}}>Great restaurants in {cityName}, delivering to you</h1>
           <div className="locationBasedMainDiv111">
             Set exact location to find the right restaurants near you.
           </div>
@@ -18,17 +34,17 @@ export const LocationBased = () => {
           </div>
         </div>
       </div>
-
+      <SelectLocationSlider />
       <div style={{ backgroundColor: "#f7f7f7" }}>
         <div className="locationBasedMainDiv2">
           <span>
-            Home / <span>{location}</span>
+            Home / <span>{cityName}</span>
           </span>
         </div>
       </div>
 
       <div className="locationBasedMainAbout">
-        <div className="locationBasedMainAboutHeading">About the food culture in {location}</div>
+        <div className="locationBasedMainAboutHeading" >About the food culture in {cityName}</div>
         <div className="locationBasedMainAboutDesc">
           Order food & beverages online from restaurants near & around you. We deliver food from
           your neighborhood local joints, your favorite cafes, luxurious & elite restaurants in your
@@ -37,11 +53,11 @@ export const LocationBased = () => {
         </div>
       </div>
 
-      <div className="locationBasedMainPicks">
+      <div className="locationBasedMainPicks" style={{marginTop:"47px"}}>
         <div className="locationBasedMainPicksHeading">Our picks for you</div>
         <div className="locationBasedMainPicksCards">
           <div className="locationBasedMainPicksCardRow">
-            <Link to="#" className="PicksCard">
+            <Link to="/menu" className="PicksCard">
               <img
                 className="PicksCardImg"
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Offers_yqoiuk"
@@ -96,13 +112,28 @@ export const LocationBased = () => {
         </div>
 
         <div className="locationBasedMainLocation">
-          <div className="locationBasedMainLocationHeading">Where might we find you?</div>
+          <Findus />
         </div>
         <div className="locationBasedMainRestaurants">
           <div className="locationBasedMainRestaurantsHeading">
-            Popular restaurants in and around {location}
+            Popular restaurants in and around {cityName}
           </div>
-          <div className="restaurantsCards">
+
+
+{/* fooditems imported */}
+         <div>
+         <FoodItems />
+         </div>
+         
+
+
+
+
+
+
+
+
+          {/* <div className="restaurantsCards">
             <div className="restaurantsCard">
               <Link to="/" className="restaurantsCardLink">
                 <div className="restaurantsCardLinkDiv">
@@ -124,7 +155,7 @@ export const LocationBased = () => {
                 </div>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

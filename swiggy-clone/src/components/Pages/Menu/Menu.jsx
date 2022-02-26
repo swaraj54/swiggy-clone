@@ -1,7 +1,7 @@
 import  Filter  from './Filters/Filters'
 import React from 'react'
 import Banner from '../../Banner/Banner'
-import Footer from '../../Footer/Footer'
+import Footer from "../../landingPage/footer/Footer";
 import FoodItems from './FoodItems/FoodItems'
 import './Menu.css'
 
@@ -14,8 +14,8 @@ function Menu() {
           3. Food Items 
           4. Footer
       */}
-      
-      {/* Navbar Section */}
+       
+      {/* Navbar Section */} 
       {/* <Navbar/> */}
 
 
