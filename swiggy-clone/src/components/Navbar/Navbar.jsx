@@ -5,7 +5,7 @@ import { RouteContext } from "../routeFolder/RouteContext";
 import Authentication from "../landingPage/authentication/Authentication";
 import { AuthContext } from "../landingPage/AuthContext";
 
-function Navbar() {
+function Navbar() { 
   const { city } = useParams()
   const {cityName, addCityName, routeControl, toggleRouteControl } = useContext(RouteContext);
   const [authenticateShow, setAuthenticateShow] = useState(false);
@@ -14,10 +14,7 @@ function Navbar() {
   const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
 
   return (
-    <div
-      className="nav__container"
-      style={{ display: !routeControl ? "none" : "block" }}
-    >
+    <div className="nav__container">
 
      <Authentication />
    

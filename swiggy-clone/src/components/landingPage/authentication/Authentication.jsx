@@ -147,7 +147,7 @@ async function verifyExistingUser(e){
         <div className='authenticationDiv'   style={{right : auth ? "0" : "-37vw"}}>
            <div className="authenticationContentDiv">
            <CloseIcon className="closeIcon" onClick={()=>{
-               toggleAuthDiv()
+               toggleAuthDiv() 
            }} />
 
            <div id="signUpButtonDiv" style={{display:signUp ? "flex" : "none"}}>

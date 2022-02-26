@@ -22,7 +22,6 @@ const LandingPage = () => {
       <FindOn />
       <Footer />
     </div>
-    
 
     );
 };

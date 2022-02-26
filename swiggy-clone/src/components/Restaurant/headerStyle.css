@@ -7,8 +7,8 @@
   padding: 0px 2vw 1vw;
   position: fixed;
   z-index: 1;
-  top: 0;
-  /* height: 20vh; */
+  top: 10vh;
+  /* height: 20vh; */ 
 }
 #restobannerimg {
   width: 20vw;
@@ -150,10 +150,10 @@
 #restoItemBody {
   display: flex;
   /* position: absolute; */
-  margin-top: 20vw;
+  margin-top: 25vw;
   /* position: relative; */
   position: sticky;
-  top: 50px;
+  top: 100px;
 }
 #restoSingleItmeDiv {
   display: flex;
@@ -170,7 +170,7 @@
   padding: 1vw 0vw 3vw 3vw;
 
   position: sticky;
-  top: 15vw;
+  top: 18vw;
 }
 #restoCatBodyItem2 img {
   width: 11vw;
@@ -208,10 +208,10 @@
   width: 25vw;
 
   position: sticky;
-  top: 15vw;
+  top: 18vw;
   height: fit-content;
 }
-#restoCart img {
+#restoCart #cartEmptyImage{
   width: 100%;
 }
 

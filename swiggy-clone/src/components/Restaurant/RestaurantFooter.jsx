@@ -1,6 +1,9 @@
 import "./footerStyle.css"
 
 export const RestaurantFooter=()=>{
+
+    const currentRestaurant = JSON.parse(localStorage.getItem("selectedFood"));
+
     return(
         <div id="restofooterDiv">
         <div className="restofooterFlex">
@@ -8,7 +11,7 @@ export const RestaurantFooter=()=>{
                 <h3>ADDRESS</h3>
                 <hr />
               
-                <p>Mirchi Restaurant, LBS Market, </p> <p> Bhilwara - 311001, Opposite Mahavir Park, </p> <p> Bhilwara Locality, Bhilwara</p>
+                <p>{currentRestaurant.address}, </p> <p> Bhilwara - 311001, Opposite Mahavir Park, </p> <p> Bhilwara Locality, Bhilwara</p>
             </div>
             <div className="restofooterFlexChild">
                 <h3>CUISINES</h3>

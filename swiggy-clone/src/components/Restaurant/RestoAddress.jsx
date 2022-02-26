@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import StarIcon from "@mui/icons-material/Star";
 
+const currentRestaurant = JSON.parse(localStorage.getItem("selectedFood"));
+
 export class RestoAddress extends PureComponent {
   render() {
     return (
@@ -9,20 +11,20 @@ export class RestoAddress extends PureComponent {
           <p>Fast Food</p>
         </div>
         <div>
-          <p>Reliance Mega Mall, Suzuki Colony | Change Outlet </p>
+          <p>{currentRestaurant.address}</p>
         </div>
         <div id="restoMidRating">
           <div className="restoMidRatingDiv1">
             <StarIcon />
-            --
-            <p className="restoMidRatingDivP">Too Few Ratings</p>
+           
+            <p className="restoMidRatingDivP">{currentRestaurant.rating}</p>
           </div>
           <div className="restoMidRatingDiv2">
-            <p>15 mins</p>
+            <p>{currentRestaurant.delivery_time} mins</p>
             <p className="restoMidRatingDivP">Delivery Time</p>
           </div>
           <div className="restoMidRatingDiv3">
-            <p>₹ 400</p>
+            <p>₹ {currentRestaurant.price}</p>
             <p className="restoMidRatingDivP">Cost for two</p>
           </div>
         </div>

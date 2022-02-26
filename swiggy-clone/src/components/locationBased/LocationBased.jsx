@@ -12,10 +12,10 @@ export const LocationBased = () => {
   const {cityName, addCityName } = useContext(RouteContext);
 
   const { city } = useParams();
-  console.log('city:', city)
+  const currentCity = city.split("=")
 
   useEffect(()=>{
-    addCityName(city.substring(5, city.length))
+    addCityName(currentCity[1])
   },[])
 
 
@@ -73,7 +73,7 @@ export const LocationBased = () => {
               />
               <div className="PicksCardHeading">top rated</div>
             </Link>
-            <Link to="/" className="PicksCard">
+            <Link to="/menu" className="PicksCard">
               <img
                 className="PicksCardImg"
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/SuperFastDelivery_lmh0wh"
@@ -84,7 +84,7 @@ export const LocationBased = () => {
           </div>
 
           <div className="locationBasedMainPicksCardRow" style={{ marginTop: "30px" }}>
-            <Link to="/" className="PicksCard">
+            <Link to="/menu" className="PicksCard">
               <img
                 className="PicksCardImg"
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Biriyani_bohvze"

@@ -8,6 +8,12 @@ export const AuthContextProvider = ({children})=>{
     const [coupon, setCoupon] = useState(false);
     const [signupOtp, setSignupOtp] = useState(false);
     const [loginOtp, setLoginOtp] = useState(false);
+    const [change, setChange] = useState(0);
+
+    const toggleChange = ()=>{
+        var randomNum = Math.random(100)
+        setChange(randomNum)
+     }
     
     const toggleAuthDiv = ()=>{
        setAuth(!auth)
@@ -26,5 +32,5 @@ export const AuthContextProvider = ({children})=>{
     }
 
 
-    return <AuthContext.Provider value={{auth,coupon,signupOtp,loginOtp,toggleLoginOtp, toggleAuthDiv,toggleCoupon,toggleSignupOtp}}>{children}</AuthContext.Provider>
+    return <AuthContext.Provider value={{auth,coupon,signupOtp,loginOtp,change,toggleChange,toggleLoginOtp, toggleAuthDiv,toggleCoupon,toggleSignupOtp}}>{children}</AuthContext.Provider>
 } 

@@ -8,15 +8,15 @@ function FoodItem() {
 
   const foodItems = useSelector((state) => state.foodItemsReducer.foodItems);
   console.log('foodItems:', foodItems)
-
-
-
  
   return (
     <div className='food_items__container'>
     <div className="foot_items_main_container">
 {foodItems.map((firstData)=>{
-return <div className='foodItem_container'>
+return <div className='foodItem_container' onClick={()=>{
+  localStorage.setItem("selectedFood",JSON.stringify(firstData));
+  window.location.href="/restaurantmenu"
+}}>
 
       {/* Image Container */}
       <div className="img_container">

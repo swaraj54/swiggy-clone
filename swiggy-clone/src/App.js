@@ -10,8 +10,10 @@ import ReadPolicy from "./components/cart/ReadPolicy";
 import Navbar from "./components/Navbar/Navbar";
 import Help from "./components/Help/Help";
 import { LocationBased } from "./components/locationBased/LocationBased";
+import Header from "./components/Restaurant/Header";
 
-function App() {
+
+function App() { 
   return (
     <div className="App">
       <Navbar />
@@ -26,6 +28,7 @@ function App() {
         <Route path="/offers/payment" element={<PaymentOffers />}></Route>
         <Route path="/help" element={<Help />}></Route>
         <Route path="/location/:city" element={<LocationBased />} />
+        <Route path="/restaurantmenu" element={<Header />}></Route>
       </Routes>
     </div>
   );
