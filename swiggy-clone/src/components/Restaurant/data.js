@@ -1,4 +1,96 @@
 export const item = {
+  Recommended: [
+    {
+      name: "Special Cheese Burst ( Double Cheese ) ",
+      price: 250,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nkrr1scyn6hpwph2vdso",
+      category: "Pizza",
+    },
+    {
+      name: "Special Paneer Tikka ( Double Cheese )",
+      price: 265,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/aygk7vouzgswchdvivb9",
+      category: "Pizza",
+    },
+    {
+      name: "Special Paneer Peri Peri Golden Corn ",
+      price: 265,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/vckw5mtwwymkghnh1y4h",
+      category: "Pizza",
+    },
+    {
+      name: "Jain spicy",
+      price: 195,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/c0wd1egjowqzvi5dubmh",
+      category: "Pizza",
+    },
+
+    {
+      name: "Aloo Tikki Burger ",
+      price: 90,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ujxfjmxgtvnpdahcztra",
+      category: "Burger",
+    },
+    {
+      name: "Tandoori butter cheese burger ",
+      price: 120,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/fjokk176tlfgtshujakx",
+      category: "Burger",
+    },
+    {
+      name: "Jumbo ( Double Cheese ) grill ",
+      price: 235,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jbhmmbccy9ohi2x904dn",
+      category: "Sandwich",
+    },
+
+    {
+      name: "Corn Cheese Burger ",
+      price: 120,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ayonihd2jajbpuzkrtgf",
+      category: "Burger",
+    },
+    {
+      name: "Strawberry Shake",
+      price: 90,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wsbdjacdwg0vfggpbyhm",
+      category: "Shake",
+    },
+    {
+      name: "Black currant Shake",
+      price: 90,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/awlsezak34fp0unmzwkx",
+      category: "Shake",
+    },
+    {
+      name: "Aloo Patties ",
+      price: 45,
+      isVeg: 1,
+      image:
+        "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/fokgwojjityctiour6j0",
+      category: "Patties",
+    },
+  ],
   Burger: [
     {
       name: "Aloo Tikki Burger ",
