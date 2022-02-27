@@ -10,23 +10,8 @@ import { Dialog } from "@mui/material";
 export const PastOrdersCard = () => {
   const [drawer, setDrawer] = useState(false);
   const [dialog, setDialog] = useState(false);
-  var pastOrders = [
-    {
-      order_id: "Order #30123550904",
-      img: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_200,c_fill/h8f8pyubkaxywyehrxqk",
-      from_add: { name: "Green Chilly", address: "Bally" },
-      to_add: {
-        name: "Other",
-        address: "Abhay Guha Rd, Belur Math, Howrah, West Bengal 711202, India",
-      },
-      date: "Wed, Jan 9, 2019, 09:30 PM",
-      items: [
-        { dish: "Chicken Chilli Gravy", quantity: 1, price: 99 },
-        { dish: "Chicken Chilli Gravy", quantity: 1, price: 99 },
-      ],
-      total_paid: 83,
-    },
-  ];
+  let userData = JSON.parse(localStorage.getItem("currentUserId"));
+  var pastOrders = userData.pastOrders;
   return (
     <div>
       <div className="PastOrdersCardHeading">Past Orders</div>

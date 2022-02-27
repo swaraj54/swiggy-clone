@@ -24,10 +24,10 @@ export const MyAccountsOrders = () => {
 
   const navigate = useNavigate();
   const { comp } = useParams();
+  let hay = JSON.parse(localStorage.getItem("currentUserId"));
+  console.log("hay:", hay);
   let user = {
-    name: "Vikash Kumar",
-    mobile: "8986298980",
-    email: "vikashoffice.vk@gmail.com",
+    ...hay,
     pastOrders: [
       {
         order_id: "Order #30123550904",
@@ -35,7 +35,7 @@ export const MyAccountsOrders = () => {
         from_add: { name: "Green Chilly", address: "Bally" },
         to_add: {
           name: "Other",
-          address: "Abhay Guha Rd, Belur Math, Howrah, West Bengal 711202, India",
+          address: "Howrah, West Bengal 711202, India",
         },
         date: "Wed, Jan 9, 2019, 09:30 PM",
         items: [
@@ -48,22 +48,15 @@ export const MyAccountsOrders = () => {
     addresses: [
       {
         type: "",
-        body: "House No-30,Flat No-505, Abhay Guha Rd, Belur Math, Howrah, West Bengal 711202, India",
+        body: "Belur Math, Howrah, West Bengal 711202, India",
       },
       {
         type: "Other",
-        body: "Flat No-505 Building No-30, Siddheshwar apartment, Abhay Guha Rd, Belur Math, Liluah, Howrah, West Bengal 711204, India",
-      },
-      {
-        type: "Other",
-        body: "Flat No-505 Building No-30, Siddheshwar apartment, Abhay Guha Rd, Belur Math, Liluah, Howrah, West Bengal 711204, India",
-      },
-      {
-        type: "",
-        body: "House No-30,Flat No-505, Abhay Guha Rd, Belur Math, Howrah, West Bengal 711202, India",
+        body: "New Delhi, India",
       },
     ],
   };
+  localStorage.setItem("currentUserId", JSON.stringify(user));
   let listData = [
     { icon: <ShoppingBagIcon />, title: "Orders" },
     { icon: <MonetizationOnIcon />, title: "Swiggy One" },
@@ -100,7 +93,7 @@ export const MyAccountsOrders = () => {
                   <input
                     type="text"
                     name="phone"
-                    // value={user.mobile}
+                    // value={user.phone}
                     placeholder="Phone number"
                     required
                   />
@@ -109,7 +102,7 @@ export const MyAccountsOrders = () => {
               </>
             ) : (
               <div>
-                <div className="editProfileDrawer211">{user.mobile}</div>
+                <div className="editProfileDrawer211">{user.phone}</div>
                 <button
                   className="editProfileDrawer212"
                   onClick={() => {
@@ -129,7 +122,7 @@ export const MyAccountsOrders = () => {
                   <input
                     type="text"
                     name="email"
-                    // value={user.mobile}
+                    // value={user.phone}
                     placeholder="Email"
                     required
                   />
@@ -158,7 +151,7 @@ export const MyAccountsOrders = () => {
                   <input
                     type="text"
                     name="password"
-                    // value={user.mobile}
+                    // value={user.phone}
                     placeholder="Password"
                     required
                   />
@@ -194,7 +187,7 @@ export const MyAccountsOrders = () => {
             </div>
             <div className="MyAccountsOrdersDivDetailsName">{user.name}</div>
             <div className="MyAccountsOrdersDivDetailsContacts">
-              <span>{user.mobile} </span> <span> {user.email}</span>
+              <span>{user.phone} </span> <span> {user.email}</span>
             </div>
           </div>
         </div>

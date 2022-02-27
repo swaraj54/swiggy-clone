@@ -1,26 +1,8 @@
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 export const ManageAddressCard = () => {
-  let userData = {
-    addresses: [
-      {
-        type: "",
-        body: "House No-30,Flat No-505, Abhay Guha Rd, Belur Math, Howrah, West Bengal 711202, India",
-      },
-      {
-        type: "Other",
-        body: "Flat No-505 Building No-30, Siddheshwar apartment, Abhay Guha Rd, Belur Math, Liluah, Howrah, West Bengal 711204, India",
-      },
-      {
-        type: "Other",
-        body: "Flat No-505 Building No-30, Siddheshwar apartment, Abhay Guha Rd, Belur Math, Liluah, Howrah, West Bengal 711204, India",
-      },
-      {
-        type: "",
-        body: "House No-30,Flat No-505, Abhay Guha Rd, Belur Math, Howrah, West Bengal 711202, India",
-      },
-    ],
-  };
+  let userData = JSON.parse(localStorage.getItem("currentUserId"));
+
   return (
     <div>
       <div className="manageAddressCardDiv">Manage Addresses</div>
