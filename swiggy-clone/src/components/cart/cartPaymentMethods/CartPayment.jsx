@@ -11,7 +11,7 @@ const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not fo
 const paymentHandler = async (totalPrice) => {
   console.log("got it")
   const orderUrl = "http://localhost:3003/payment";
-  const response = await axios.post(orderUrl,{price:totalPrice});
+  const response = await axios.post(orderUrl,{price:totalPrice+66});
   const { data } = response;
   const options = {
     key: "rzp_test_o2Ali4pzYWDsvw",
@@ -75,7 +75,9 @@ const paymentHandler = async (totalPrice) => {
 
 
 const CashPayment = () => {
-  return (
+  
+ const { totalPrice} = useContext(AuthContext);
+ return (
     <div className="paymentMethodsPage">
       <img className="paymentImg1" src="cartImages/payByCash.png" alt="" />
       <h2 className="paymentMethodsPageTitle">Cash</h2>
@@ -83,7 +85,7 @@ const CashPayment = () => {
         Online payment recommended to reduce contact between you and delivery
         partner
       </p>
-      <CommonButton>Pay ₹206</CommonButton>
+      <CommonButton>Pay ₹{totalPrice+66}</CommonButton>
     </div>
   );
 };
@@ -93,7 +95,9 @@ export { CashPayment };
 // food card
 
 const FoodCardPayment = () => {
-  return (
+  
+ const { totalPrice} = useContext(AuthContext);
+ return (
     <div id="foodCardDiv" className="paymentMethodsPage differentWalletDiv" >
       <h2 className="foodCardTitle">Add new food card</h2>
       <p className="weAccept">
@@ -123,7 +127,7 @@ const FoodCardPayment = () => {
       <input className="checkBoxFood" type="checkbox" name="" id="" />
       Securely save this card for a faster checkout next time.</p>
 
-      <FoodButton>Pay ₹206</FoodButton>
+      <FoodButton>Pay ₹{totalPrice+66}</FoodButton>
     </div>
   );
 };
@@ -139,7 +143,7 @@ const UPIPayment = () => {
   const { totalPrice} = useContext(AuthContext); 
   console.log('totalPrice:', totalPrice)
 
-  return (
+ return (
     <div className="paymentMethodsPage differentWalletDiv">
       <img
         className="paymentImg1"
@@ -154,7 +158,7 @@ const UPIPayment = () => {
       </p>
       <PayButton onClick={()=>{
         paymentHandler(totalPrice)
-      }}>Pay ₹{totalPrice}</PayButton>
+      }}>Pay ₹{totalPrice+66}</PayButton>
     </div>
   );
 };
@@ -163,7 +167,8 @@ export { UPIPayment };
 
 //upi credit
 const CreditPayment = () => {
-  return (
+ const { totalPrice} = useContext(AuthContext); 
+ return (
     <div className="paymentMethodsPage differentWalletDiv">
       <img
         className="paymentImg1"
@@ -175,7 +180,7 @@ const CreditPayment = () => {
       <p className="paymentMethodsPageContent">
         LazyPay lets you order now & pay later at no extra cost.
       </p>
-      <PayButton>Pay ₹206</PayButton>
+      <PayButton>Pay ₹{totalPrice+66}</PayButton>
     </div>
   );
 };
@@ -184,7 +189,9 @@ export { CreditPayment };
 
 //wallet payment
 const WalletPayment = () => {
-  return (
+  
+ const { totalPrice} = useContext(AuthContext);
+ return (
     <div className="paymentMethodsPage">
       {/* //amazon pay */}
       <div className="differentWalletDiv">
@@ -194,7 +201,7 @@ const WalletPayment = () => {
           alt=""
         />
         <h2 className="paymentMethodsPageTitle">Amazon Pay</h2>
-        <PayButton>Pay ₹206</PayButton>
+        <PayButton>Pay ₹{totalPrice+66}</PayButton>
       </div>
 
       {/* // phonepe */}
@@ -206,7 +213,7 @@ const WalletPayment = () => {
           alt=""
         />
         <h2 className="paymentMethodsPageTitle">PhonePe</h2>
-        <PayButton>Pay ₹206</PayButton>
+        <PayButton>Pay ₹{totalPrice+66}</PayButton>
       </div>
 
       {/* // paytm */}
@@ -218,7 +225,7 @@ const WalletPayment = () => {
           alt=""
         />
         <h2 className="paymentMethodsPageTitle">Paytm</h2>
-        <PayButton>Pay ₹206</PayButton>
+        <PayButton>Pay ₹{totalPrice+66}</PayButton>
       </div>
 
       {/* // Mobikwik */}
@@ -230,7 +237,7 @@ const WalletPayment = () => {
           alt=""
         />
         <h2 className="paymentMethodsPageTitle">Mobikwik</h2>
-        <PayButton>Pay ₹206</PayButton>
+        <PayButton>Pay ₹{totalPrice+66}</PayButton>
       </div>
 
       {/* // Free charge */}
@@ -242,7 +249,7 @@ const WalletPayment = () => {
           alt=""
         />
         <h2 className="paymentMethodsPageTitle">Freecharge</h2>
-        <PayButton>Pay ₹206</PayButton>
+        <PayButton>Pay ₹{totalPrice+66}</PayButton>
       </div>
     </div>
   );

@@ -50,9 +50,9 @@ const RightCartRestaurant = () => {
 
                   <div id="quantityUpdateDiv">
                   <p className="eachItemQuantity" onClick={async()=>{
-                      console.log(`https://swiggybackendclone.herokuapp.com/cart/${item._id}`)
+                      console.log(`https://swiggybackendclone.herokuapp.com/cart/deleteitem/${item._id}`)
                       if(item.quantity == 1){
-                        await axios.delete(`https://swiggybackendclone.herokuapp.com/cart/${item._id}`)
+                        await axios.delete(`https://swiggybackendclone.herokuapp.com/cart/deleteitem/${item._id}`)
                         .then((res)=>{
                             console.log(res.data);
                             getData()

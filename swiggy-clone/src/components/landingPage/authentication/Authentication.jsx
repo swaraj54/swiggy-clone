@@ -38,7 +38,7 @@ const [signupUser, setSignupUser] = useState({
            alert("User Exist Do login");
            window.location.href="/"
        }else{
-                 
+       alert(res.data)   
        setCurrentOtp(res.data);
        console.log(res) 
        }
@@ -78,7 +78,7 @@ const [otpVerify, setOtpVerify] = useState(" ")
 
        // redirect after authentication successful
        localStorage.setItem('currentUserId', JSON.stringify(res.data));
-       window.location.href="/location"
+       window.location.href="/location/city=Chennai"
    })
    .catch((e)=>{
        alert(e.message)
@@ -106,6 +106,7 @@ else{
                alert("User Not Exist")
               window.location.href = "/";
            }else{
+               alert(res.data)
             setLoginDataOtp(res.data)
            }
 
@@ -130,7 +131,7 @@ async function verifyExistingUser(e){
 
 
          localStorage.setItem('currentUserId', JSON.stringify(res.data));
-         window.location.href="/location";
+         window.location.href="/location/city=delhi";
      })
      .catch((e)=>{
         alert(e.message)

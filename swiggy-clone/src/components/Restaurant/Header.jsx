@@ -42,13 +42,8 @@ useEffect(()=>{
     setCart(res.data)
     console.log(res.data,"from cart mongodb")
   })
- },[])
+ },[change])
  
-
-
-
-
-
 
 
   const scrto = (e) => {

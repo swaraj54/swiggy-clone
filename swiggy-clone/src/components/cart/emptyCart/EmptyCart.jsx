@@ -12,7 +12,9 @@ const EmptyCart = () => {
       <div className="d7jCU">
         You can go to home page to view more restaurants
       </div>
-      <div className="_3pgCg">See restaurants near you</div>
+      <div className="_3pgCg" onClick={()=>{
+        window.location.href="/menu"
+      }}>See restaurants near you</div>
     </div>
     <div className="_3-bcQ">
       <div className="_3djal">

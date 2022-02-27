@@ -20,10 +20,11 @@ import Navbar from "./components/Navbar/Navbar";
 function App() { 
   return (
     <div className="App">
-     <Navbar /> 
-
+   
+<Navbar />
       <Routes>
-        <Route path="/" element={<LandingPage />}></Route>
+        <Route exact path="/" element={<LandingPage />}></Route>
+
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/cart/policy" element={<ReadPolicy />}></Route>
         <Route path="/Menu" element={<Menu />}></Route>
@@ -37,6 +38,7 @@ function App() {
         <Route path="/emptycart" element={<EmptyCart />}></Route>
         <Route path="/my-account/:comp" element={<MyAccountsOrders />} />
         <Route path="*" element={<PagenotFound />}></Route>
+   
       </Routes>
     </div>
   );

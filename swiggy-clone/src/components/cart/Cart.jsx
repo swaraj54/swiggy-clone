@@ -8,16 +8,25 @@ import Footer from "../landingPage/footer/Footer";
 import CartRight from "./cartRightContainer/CartRight";
 import CartCoupon from "./cartCoupon/CartCoupon";
 import Authentication from "../landingPage/authentication/Authentication";
+import EmptyCart from "./emptyCart/EmptyCart";
+import axios from "axios";
 
 const Cart = () => {
-
+ 
   const [authButton, setAuthButton] = useState(" ");
   const [otp, setOtp] = useState(false);
   const [signupOtp, setSignUpOtp] = useState(false);
   const [user, setUser] = useState(false);
-
+  const [cartItems,setCartItems] = useState([])
 
   const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
+  axios.get(`https://swiggybackendclone.herokuapp.com/cart/${currentUser._id}`)
+  .then((res)=>{
+    setCartItems(res.data)
+  })
+
+
+
   useEffect(()=>{
     if(currentUser !== "not found"){
       setUser(true)
@@ -25,7 +34,7 @@ const Cart = () => {
   }, [currentUser])
  
 
-  return (
+  return cartItems.length === 0 ? <EmptyCart /> :(
     <div style={{overflowX:"hidden"}}> 
       
 
