@@ -10,7 +10,7 @@ const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not fo
  
 const paymentHandler = async (totalPrice) => {
   console.log("got it")
-  const orderUrl = "http://localhost:3003/payment";
+  const orderUrl = "https://swiggybackendclone.herokuapp.com/payment";
   const response = await axios.post(orderUrl,{price:totalPrice+66});
   const { data } = response;
   const options = {
@@ -51,10 +51,11 @@ const paymentHandler = async (totalPrice) => {
        axios.get(`https://swiggybackendclone.herokuapp.com/cart/delete/${currentUser._id}`)
        .then((res)=>{
          console.log(res.data)
+         window.location.href="/ordersuccessful";
        })
 
 
-      window.location.href="/ordersuccessful";
+      
       } catch (err) {
         console.log(err);
       }

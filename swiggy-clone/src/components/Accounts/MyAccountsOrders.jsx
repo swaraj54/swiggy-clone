@@ -15,6 +15,7 @@ import { SettingCard } from "./SettingCard";
 import { useState } from "react";
 import { Drawer } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import Navbar from "../Navbar/Navbar";
 
 export const MyAccountsOrders = () => {
   const [drawer, setDrawer] = useState(false);
@@ -67,6 +68,7 @@ export const MyAccountsOrders = () => {
   ];
   return (
     <>
+    <Navbar />
       <Drawer
         anchor="right"
         open={drawer}
@@ -174,7 +176,7 @@ export const MyAccountsOrders = () => {
           </div>
         </div>
       </Drawer>
-      <div className="MyAccountsOrdersDiv">
+      <div className="MyAccountsOrdersDiv" style={{marginTop:"2vw"}}>
         <div className="MyAccountsOrdersDivDetails">
           <div className="MyAccountsOrdersDivDetails1">
             <div

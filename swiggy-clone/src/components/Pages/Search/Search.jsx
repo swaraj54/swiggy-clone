@@ -3,6 +3,7 @@ import './Search.css'
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
+import Navbar from "../../Navbar/Navbar"
 
 
 function Search() {
@@ -21,6 +22,7 @@ function Search() {
   const getData = async () => {
     await axios.get(`https://www.themealdb.com/api/json/v1/1/categories.php`).then((resp)=>{
       const data = resp.data.categories;
+        console.log(data)
       setFoodItems(data);
     })
   }
@@ -45,6 +47,9 @@ function Search() {
 
    console.log("foodItems",foodItems);
   return (
+    <div>
+      <Navbar />
+  
     <div className='search_container'>
 
       {/* Search Section */}
@@ -103,7 +108,7 @@ function Search() {
         </div>
       </div>
 
-      
+      </div>
     </div>
   )
 }

@@ -2,12 +2,15 @@ import React from 'react'
 import Banner from '../../Banner/Banner'
 import FoodItems from '../Menu/FoodItems/FoodItems';
 import { Link} from 'react-router-dom';
-import './Offers.css'
+import './Offers.css';
+import Navbar from '../../Navbar/Navbar';
 
 function RestaurantOffers() {
   return (
+    <div>
+           <Navbar />
+   
     <div className='restaurant_offer_container'>
-
       {/* <h1>Hello I am offer page</h1> */}
       <Banner heading='Offers for you' desc='Explore top deals and offers exclusively for you!' color='#005062' flag='true'/>
 
@@ -32,6 +35,7 @@ function RestaurantOffers() {
           </div>
           <FoodItems />
       </div>
+    </div>
     </div>
   )
 }

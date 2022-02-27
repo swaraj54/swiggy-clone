@@ -14,7 +14,7 @@ function Navbar() {
   const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
 
   return (
-    <div className="nav__container">
+    <div className="nav__container" >
 
      <Authentication />
    

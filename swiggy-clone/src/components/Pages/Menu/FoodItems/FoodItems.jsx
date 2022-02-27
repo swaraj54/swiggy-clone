@@ -24,12 +24,12 @@ function FoodItems() {
        ================================================
        ================================================
     */
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); 
 
   useEffect(() => {
     const getData = () => {
       axios.get("https://swiggybackendclone.herokuapp.com/restaurantmenu").then((resp) => {
-        //    console.log(resp.data.categories);
+        // console.log("resp.data.categories");
         const data = resp.data;
 
         for (let item of data) {

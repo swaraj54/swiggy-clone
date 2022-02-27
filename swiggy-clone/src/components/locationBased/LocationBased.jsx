@@ -6,6 +6,7 @@ import FoodItems from "../Pages/Menu/FoodItems/FoodItems"
 import { useContext, useEffect } from "react";
 import { RouteContext } from "../routeFolder/RouteContext";
 import SelectLocationSlider from "../selectLocationSlider/SelectLocationSlider";
+import Navbar from "../Navbar/Navbar";
 
 export const LocationBased = () => {
 
@@ -21,6 +22,8 @@ export const LocationBased = () => {
 
 
   return (
+    <div>
+    <Navbar />
     <div className="locationBasedMainDiv">
       <div className="locationBasedMainDiv1">
         <div className="locationBasedMainDiv11">
@@ -158,6 +161,7 @@ export const LocationBased = () => {
           </div> */}
         </div>
       </div>
+    </div>
     </div>
   );
 };

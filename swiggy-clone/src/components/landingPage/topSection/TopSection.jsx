@@ -128,7 +128,10 @@ const TopSection = () => {
                 </Button>
               </div>
 
-              <Button className="foodButton">Find food</Button>
+              <Button className="foodButton" onClick={()=>{
+                setAuthOption("signup");
+                 toggleAuthDiv();
+              }}>Find food</Button>
             </div>
 
             <div id="popularCitiesDiv">

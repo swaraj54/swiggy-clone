@@ -14,6 +14,7 @@ import { item } from "./data";
 import RightCartRestaurant from "./RightCartRestaurant";
 import axios from "axios";
 import { AuthContext } from "../landingPage/AuthContext";
+import Navbar from "../Navbar/Navbar";
 
 const currentUser = JSON.parse(localStorage.getItem("currentUserId"));
 const currentRestaurant = JSON.parse(localStorage.getItem("selectedFood"));
@@ -133,14 +134,14 @@ useEffect(()=>{
           </div>
         </div>
         <div id="restoCatBodyItem2">
-          <img src={image} alt="" />
+          <img src={image} alt="" /> 
   
           <Button
             variant="contained"
             className="restoImageBtn"
             onClick={async () => {
               await axios
-                .post("http://localhost:3003/cart", {
+                .post("https://swiggybackendclone.herokuapp.com/cart", {
                   name: name,
                   price: price,
                   imageUrl: image,
@@ -183,6 +184,7 @@ useEffect(()=>{
 
   return (
     <>
+    <Navbar />
       <div>
         <div id="restoHeader">
           <div id="restobanner">

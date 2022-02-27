@@ -3,11 +3,13 @@ import Banner from '../../Banner/Banner'
 import { Link} from 'react-router-dom';
 import './Offers.css'
 import CouponCart from '../../Coupons/CouponCart';
+import Navbar from '../../Navbar/Navbar';
 
 
 function Offers() {
   return (
     <div>
+    <Navbar />
       {/* <h1>Hello I am offer page</h1> */}
       <Banner heading='Offers for you' desc='Explore top deals and offers exclusively for you!' color='#005062' flag='true'/>
 

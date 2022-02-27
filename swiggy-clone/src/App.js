@@ -14,14 +14,14 @@ import OrderSuccessful from "./components/orderSuccessful/OrderSuccessful";
 import EmptyCart from "./components/cart/emptyCart/EmptyCart";
 import PagenotFound from "./components/landingPage/pagenotfound/PagenotFound";
 import {MyAccountsOrders} from "./components/Accounts/MyAccountsOrders";
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 
 function App() { 
   return (
     <div className="App">
    
-{/* <Navbar /> */}
+
       <Routes>
         <Route exact path="/" element={<LandingPage />}></Route>
 

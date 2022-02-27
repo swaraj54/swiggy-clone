@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './FoodItem.css'
 import {useSelector} from 'react-redux'
 import StarIcon from '@mui/icons-material/Star';
 
 
 function FoodItem() {
-
   const foodItems = useSelector((state) => state.foodItemsReducer.foodItems);
   console.log('foodItems:', foodItems)
  
@@ -55,7 +54,7 @@ return <div className='foodItem_container' onClick={()=>{
            <p>{firstData.delivery_time}</p>
          </div>
          <div className="price_container">
-           <p>{firstData.price}</p>
+           <p>₹{firstData.price} for two</p>
          </div>
        </div>
 

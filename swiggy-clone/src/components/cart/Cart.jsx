@@ -10,6 +10,7 @@ import CartCoupon from "./cartCoupon/CartCoupon";
 import Authentication from "../landingPage/authentication/Authentication";
 import EmptyCart from "./emptyCart/EmptyCart";
 import axios from "axios";
+import Navbar from "../Navbar/Navbar";
 
 const Cart = () => {
  
@@ -20,7 +21,7 @@ const Cart = () => {
   const [cartItems,setCartItems] = useState([])
 
   const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
-  axios.get(`https://swiggybackendclone.herokuapp.com/cart/${currentUser._id}`)
+  axios.get(`https://swiggybackendclone.herokuapp.com/cart/`)
   .then((res)=>{
     setCartItems(res.data)
   })
@@ -36,8 +37,8 @@ const Cart = () => {
 
   return cartItems.length === 0 ? <EmptyCart /> :(
     <div style={{overflowX:"hidden"}}> 
-      
-
+      <Navbar />
+  
       <CartCoupon />
       <div id="wholeCartContainer">
         <div id="cartContainer">
