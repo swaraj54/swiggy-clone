@@ -7,7 +7,6 @@ import RestaurantOffers from "./components/Pages/Offers/RestaurantOffers";
 import LandingPage from "./components/landingPage/LandingPage";
 import Cart from "./components/cart/Cart";
 import ReadPolicy from "./components/cart/ReadPolicy";
-import Navbar from "./components/Navbar/Navbar";
 import Help from "./components/Help/Help";
 import { LocationBased } from "./components/locationBased/LocationBased";
 import Header from "./components/Restaurant/Header";
@@ -15,12 +14,13 @@ import OrderSuccessful from "./components/orderSuccessful/OrderSuccessful";
 import EmptyCart from "./components/cart/emptyCart/EmptyCart";
 import PagenotFound from "./components/landingPage/pagenotfound/PagenotFound";
 import {MyAccountsOrders} from "./components/Accounts/MyAccountsOrders";
+import Navbar from "./components/Navbar/Navbar";
 
 
 function App() { 
   return (
     <div className="App">
-      <Navbar />
+     <Navbar /> 
 
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
