@@ -16,6 +16,7 @@ const Cart = () => {
   const [signupOtp, setSignUpOtp] = useState(false);
   const [user, setUser] = useState(false);
 
+
   const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
   useEffect(()=>{
     if(currentUser !== "not found"){
@@ -26,7 +27,7 @@ const Cart = () => {
 
   return (
     <div style={{overflowX:"hidden"}}> 
-      cart page
+      
 
       <CartCoupon />
       <div id="wholeCartContainer">
