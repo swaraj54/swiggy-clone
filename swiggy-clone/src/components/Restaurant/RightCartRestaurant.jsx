@@ -2,21 +2,23 @@ import React, { useContext, useEffect, useState } from 'react';
 import "../cart/cartRightContainer/cartRight.css";
 import { CommonButton } from "../cart/greenButton/Button";
 import axios from 'axios';
-import { AuthContext } from '../landingPage/AuthContext';
+import { AuthContext } from '../landingPage/AuthContext'; 
 
 const RightCartRestaurant = () => {
     const [cartItems, setCartItems] = useState([]);
     const [total, setTotal] = useState(0);
     const {change,toggleChange} = useContext(AuthContext)
 
+    const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
+    console.log('currentUser:', currentUser)
  
     useEffect(()=>{
       getData()
-     },[change]);
+     },[change]); 
 
      function getData(){
         var productTotal = 0;
-        axios.get("https://swiggybackendclone.herokuapp.com/cart")
+        axios.get(`https://swiggybackendclone.herokuapp.com/cart/${currentUser._id}`)
         .then((res)=>{
           setCartItems(res.data)
           console.log(res.data,"from cart mongodb");

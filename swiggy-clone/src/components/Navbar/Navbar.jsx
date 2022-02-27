@@ -9,7 +9,7 @@ function Navbar() {
   const { city } = useParams()
   const {cityName, addCityName, routeControl, toggleRouteControl } = useContext(RouteContext);
   const [authenticateShow, setAuthenticateShow] = useState(false);
-  const {auth, toggleAuthDiv, signupOtp,toggleSignupOtp,loginOtp,toggleLoginOtp} = useContext(AuthContext)
+  const {auth, toggleAuthDiv, signupOtp,toggleSignupOtp,loginOtp,toggleLoginOtp} = useContext(AuthContext);
 
   const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
 
@@ -96,7 +96,7 @@ function Navbar() {
 
 
               <li style={{display: currentUser === "not found" ? "none" : "block"}}>
-                <Link to="#">
+                <Link to="/my-account/:comp">
                   <span>
                     <svg
                       className="_1GTCc"

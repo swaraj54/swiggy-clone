@@ -1,6 +1,78 @@
-import React from "react";
+import React, { useContext } from "react";
 import { CommonButton, PayButton, FoodButton } from "../greenButton/Button";
 import "./cartPayment.css";
+import axios from "axios";
+import { AuthContext } from "../../landingPage/AuthContext";
+
+const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
+
+
+
+const paymentHandler = async (totalPrice) => {
+  console.log("got it")
+  const orderUrl = "http://localhost:3003/payment";
+  const response = await axios.post(orderUrl,{price:totalPrice});
+  const { data } = response;
+  const options = {
+    key: "rzp_test_o2Ali4pzYWDsvw",
+    name: "Swiggy clone",
+    description: "masai unit5 project",
+    "image": "landingImages/swiggyLogo.png",
+    order_id: data.id,
+    handler: async (response) => {
+      try {
+       const paymentId = response.razorpay_payment_id;
+       console.log('paymentId:', paymentId)
+
+      const cartItems = JSON.parse(localStorage.getItem("currentCart")) || [];
+       // add order list
+
+       let orderDetails = cartItems.map((item)=>{
+         return {
+          userId: item.userId,
+          addressTitle: item.name,
+          addressContent:"New Road, delhi",
+          name: currentUser.name,
+          price:item.price,
+          imageUrl: item.imageUrl,
+          currentDate: new Date().toLocaleDateString()
+           }
+      })
+      console.log("order Details",orderDetails);
+      
+      await axios.post("https://swiggybackendclone.herokuapp.com/orders/",orderDetails)
+      .then((res)=>{
+        console.log(res.data)
+      })
+
+
+
+       // remove cart items
+       axios.get(`https://swiggybackendclone.herokuapp.com/cart/delete/${currentUser._id}`)
+       .then((res)=>{
+         console.log(res.data)
+       })
+
+
+      window.location.href="/ordersuccessful";
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    theme: {
+      color: "#686CFD",
+    },
+  };
+  var rzp1 = window.Razorpay(options);
+
+  rzp1.open();
+  };
+
+
+
+
+
+
 
 const CashPayment = () => {
   return (
@@ -58,8 +130,15 @@ const FoodCardPayment = () => {
 
 export { FoodCardPayment };
 
+
+
+
 // upi payment
+
 const UPIPayment = () => {
+  const { totalPrice} = useContext(AuthContext); 
+  console.log('totalPrice:', totalPrice)
+
   return (
     <div className="paymentMethodsPage differentWalletDiv">
       <img
@@ -73,7 +152,9 @@ const UPIPayment = () => {
         All in One- Payment gateway, links, invoices, subscription, payouts,
         payment pages & more.
       </p>
-      <PayButton>Pay ₹206</PayButton>
+      <PayButton onClick={()=>{
+        paymentHandler(totalPrice)
+      }}>Pay ₹{totalPrice}</PayButton>
     </div>
   );
 };

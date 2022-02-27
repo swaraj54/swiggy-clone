@@ -12,12 +12,12 @@ import { CashPayment, WalletPayment, CreditPayment, UPIPayment, FoodCardPayment 
 const CartLeftBottom = () => {
   const allIcons = [ 
     {
-      iconName: <LocalAtmIcon className="paymentMethodUIicon" />,
-      contentName: "Pay on Delivery",
-    },
-    {
       iconName: <PaymentsIcon className="paymentMethodUIicon" />,
       contentName: "UPI",
+    },
+    {
+      iconName: <LocalAtmIcon className="paymentMethodUIicon" />,
+      contentName: "Pay on Delivery",
     },
     // {
     //   iconName: <LocalActivityIcon className="paymentMethodUIicon" />,
@@ -74,7 +74,7 @@ const CartLeftBottom = () => {
       </div>
 
       <div id="respectivePaymentDetail">
-      {whiteIndex === 0 ? <CashPayment /> : whiteIndex === 1 ? <UPIPayment /> : whiteIndex === 2 ? <WalletPayment /> : whiteIndex === 3 ? <CreditPayment /> : <FoodCardPayment />   }
+      {whiteIndex === 0 ? <UPIPayment /> : whiteIndex === 1 ? <CashPayment />  : whiteIndex === 2 ? <WalletPayment /> : whiteIndex === 3 ? <CreditPayment /> : <FoodCardPayment />   }
         
       
      

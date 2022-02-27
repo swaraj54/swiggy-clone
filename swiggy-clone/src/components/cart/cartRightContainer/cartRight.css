@@ -80,7 +80,7 @@ padding: 0.2vw 0.5vw;
 #middleFooodDiv .FoodEachItemContainer .eachItemQuantity{
 font-size: 0.8vw;
 color:#60b246;
-margin-top:0.3vw;
+margin-top:0;
 cursor: pointer;
 }
 #middleFooodDiv .FoodEachItemContainer #itemPriceDiv{

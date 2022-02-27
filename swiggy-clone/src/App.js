@@ -11,6 +11,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Help from "./components/Help/Help";
 import { LocationBased } from "./components/locationBased/LocationBased";
 import Header from "./components/Restaurant/Header";
+import OrderSuccessful from "./components/orderSuccessful/OrderSuccessful";
+import EmptyCart from "./components/cart/emptyCart/EmptyCart";
+import PagenotFound from "./components/landingPage/pagenotfound/PagenotFound";
+import {MyAccountsOrders} from "./components/Accounts/MyAccountsOrders";
 
 
 function App() { 
@@ -29,18 +33,13 @@ function App() {
         <Route path="/help" element={<Help />}></Route>
         <Route path="/location/:city" element={<LocationBased />} />
         <Route path="/restaurantmenu" element={<Header />}></Route>
+        <Route path="//ordersuccessful" element={<OrderSuccessful />}></Route>
+        <Route path="/emptycart" element={<EmptyCart />}></Route>
+        <Route path="/my-account/:comp" element={<MyAccountsOrders />} />
+        <Route path="*" element={<PagenotFound />}></Route>
       </Routes>
     </div>
   );
 }
 
 export default App;
-
-function CartComponent() {
-  return (
-    <div>
-      <Navbar />
-      <Cart />
-    </div>
-  );
-}

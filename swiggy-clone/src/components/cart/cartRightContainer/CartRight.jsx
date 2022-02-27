@@ -3,14 +3,17 @@ import "./cartRight.css";
 import { AuthContext } from '../../landingPage/AuthContext';
 import {Link} from "react-router-dom";
 import axios from 'axios';
-
+ 
 const CartRight = () => {
 
     const [checked, setChecked] = React.useState(false)
-    const {coupon, toggleCoupon} = useContext(AuthContext);
+    const {coupon, toggleCoupon, totalPrice, setTotalPrice} = useContext(AuthContext); 
 
     const [cartItems, setCartItems] = useState([]);
     const [total, setTotal] =  useState(0);
+
+    const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
+    console.log('currentUser:', currentUser)
 
     useEffect(()=>{
       getData()
@@ -18,15 +21,17 @@ const CartRight = () => {
 
      function getData(){
         var productTotal = 0;
-        axios.get("https://swiggybackendclone.herokuapp.com/cart")
+        axios.get(`https://swiggybackendclone.herokuapp.com/cart/${currentUser._id}`)
         .then((res)=>{
           setCartItems(res.data)
+          localStorage.setItem("currentCart",JSON.stringify(res.data))
           console.log(res.data,"from cart mongodb");
           res.data.forEach((item)=>{
             productTotal += item.price * item.quantity;
           })
 
-          setTotal(productTotal)
+          setTotal(productTotal);
+          setTotalPrice(productTotal)
         })
      }
 
