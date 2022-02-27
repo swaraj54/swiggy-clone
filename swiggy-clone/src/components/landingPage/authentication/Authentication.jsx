@@ -31,7 +31,7 @@ const [signupUser, setSignupUser] = useState({
    async function handleSignUpSubmit(e){
        e.preventDefault()
    console.log(signupUser)
-   axios.post("http://localhost:3003/auth/newuser", signupUser)
+   axios.post("https://swiggybackendclone.herokuapp.com/auth/newuser", signupUser)
    .then((res)=>{
 
        if(res.data === "userExist"){
@@ -67,7 +67,7 @@ const [otpVerify, setOtpVerify] = useState(" ")
      e.preventDefault()
 
      if(currentOtp == otpVerify){
-     axios.post("http://localhost:3003/users", {
+     axios.post("https://swiggybackendclone.herokuapp.com/users", {
          phone: signupUser.phone,
          name: signupUser.name,
          email: signupUser.email,
@@ -100,7 +100,7 @@ else{
 
   async function loginSubmit(e){
       e.preventDefault()
-        await axios.post("http://localhost:3003/auth/verifyuser",{phone:loginPhone})
+        await axios.post("https://swiggybackendclone.herokuapp.com/auth/verifyuser",{phone:loginPhone})
         .then((res)=>{
            if(res.data == "notExist"){
                alert("User Not Exist")
@@ -125,7 +125,7 @@ async function verifyExistingUser(e){
     if(userOtp == loginDataOtp){
      // redirect after authentication successful
     
-     await axios.post("http://localhost:3003/auth/getverifyuser",{phone:loginPhone})
+     await axios.post("https://swiggybackendclone.herokuapp.com/auth/getverifyuser",{phone:loginPhone})
      .then((res)=>{
          console.log(res.data);
 

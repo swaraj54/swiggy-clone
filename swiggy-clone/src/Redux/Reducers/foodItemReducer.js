@@ -38,18 +38,19 @@ export const foodItemsReducer = (state = initialState, { type, payload }) => {
 
 
 
-function priceHighToLow(foodItems){
+function priceHighToLow(state){
+console.log(state);
+return state.foodItems;
+}
+function priceLowToHigh(state){
 
 }
-function priceLowToHigh(foodItems){
+function sortByRatingItem(state){
 
 }
-function sortByRatingItem(foodItems){
+function sortByTime(state){
 
 }
-function sortByTime(foodItems){
-
-}
-function sortByName(foodItems){
+function sortByName(state){
 
 }

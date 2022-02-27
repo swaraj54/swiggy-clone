@@ -14,7 +14,7 @@ function Filters() {
                   <li>Delivery Time</li>
                   <li>Rating</li>
                   <li>Cost: Low To High</li>
-                  <li>Cost: High to Low</li>
+                  <li onClick>Cost: High to Low</li>
                   <li>
                       <div className="filterLogo">
                           <stronge>Filters</stronge>

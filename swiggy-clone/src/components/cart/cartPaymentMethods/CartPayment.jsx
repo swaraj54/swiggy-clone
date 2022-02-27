@@ -7,7 +7,7 @@ import { AuthContext } from "../../landingPage/AuthContext";
 const currentUser = JSON.parse(localStorage.getItem("currentUserId")) || "not found";
 
 
-
+ 
 const paymentHandler = async (totalPrice) => {
   console.log("got it")
   const orderUrl = "http://localhost:3003/payment";
