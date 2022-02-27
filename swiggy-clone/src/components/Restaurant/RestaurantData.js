@@ -24,7 +24,7 @@ const restaurant = [
     cat: "Italian, Pizzas",
     rating: "3.9",
     time: "23 MINS",
-    avgPrice: "₹200 FOR TWO",
+    avgPrice: "₹201 FOR TWO",
     image:
       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/onrussybboydf7hpidkr",
     address: "Old Bhilwara, Old Bhilwara",
