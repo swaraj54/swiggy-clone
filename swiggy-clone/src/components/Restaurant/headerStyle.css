@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 1;
   top: 10vh;
-  /* height: 20vh; */ 
+  /* height: 20vh; */
 }
 #restobannerimg {
   width: 20vw;
@@ -211,7 +211,7 @@
   top: 18vw;
   height: fit-content;
 }
-#restoCart #cartEmptyImage{
+#restoCart #cartEmptyImage {
   width: 100%;
 }
 
@@ -233,19 +233,19 @@
 }
 
 #reatoMidSearchDiv1 {
-  height: 2vw;
+  height: 3vw;
   padding: 0.5vw;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 17vw;
 }
 #reatoMidSearchDiv2 {
-  height: 2vw;
+  height: 3vw;
   padding: 0.5vw;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 9vw;
 }
 #reatoMidSearchDiv3 {
-  height: 2vw;
+  height: 3vw;
   padding: 0.5vw;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 9vw;
