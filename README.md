@@ -72,7 +72,7 @@ First you have to have to go to the `Home Page`. There you have to click on Log 
 ---
 - **Home Page**
 ---
-![1 1](https://images2.imgbox.com/b8/a6/bl3Afafa_o.png)
+![1 1](https://images2.imgbox.com/4a/99/2U9q7lVw_o.png)
 ![1 2](https://images2.imgbox.com/dc/67/7FJydnKV_o.png)
 ![1 3](https://images2.imgbox.com/c7/6d/GfRYOtLn_o.png)
 ![1 4](https://images2.imgbox.com/8a/db/Y3tiPDSk_o.png)
