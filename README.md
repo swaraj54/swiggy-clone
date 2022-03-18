@@ -11,7 +11,7 @@
 
 ---
 
-## Deploy Link: 🙌
+## Visit our app: 🙌
 - **[Click here to run the app](https://masaiswiggyclone.herokuapp.com/)**
 
 ---
