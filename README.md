@@ -12,7 +12,7 @@
 ---
 
 ## Deploy Link: 🙌
-- **[Click here to run the app](https://swiggyclonemasai.herokuapp.com/)**
+- **[Click here to run the app](https://masaiswiggyclone.herokuapp.com/)**
 
 ---
 
